@@ -243,13 +243,6 @@ jQuery.extend( jQuery.easing,
         };
     })(Hammer.Manager.prototype.emit);
 }));
-(function($) {
-		$(function() {
-
-				$(".dropdown-button").dropdown();
-
-		}); // End Document Ready
-})(jQuery); // End of jQuery name space
 ;(function ($) {
   $.fn.collapsible = function(options) {
     var defaults = {
