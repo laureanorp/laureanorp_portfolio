@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <meta name="theme-color" content="#455A64">
     <title>Laureano Ruiz</title>
+    <link href="favicon-highres.png" rel="icon" sizes="192x192">
     <!--TESTING IF NEEDED<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">-->
 
@@ -37,7 +38,7 @@
                 <li><a href="#contact">Contact</a></li>
                 <ul id="dropdown" class="dropdown-content">
                     <li><a href="#">English</a></li>
-                    <li><a href="es/index.html">Spanish</a></li>
+                    <li><a href="http://laureanoruiz.com/es/">Spanish</a></li>
                 </ul>
                 <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="material-icons">language</i></a></li>
             </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -184,7 +185,10 @@
                             <small><em><a class="teal-text">My "mentor"</a></em></small></span>
                         <p>
                             <!--<a class="blue-text text-lighten-2" href="">
-                                <i class="fa fa-facebook-square"></i>-->
+                                <i class="fa fa-facebook-square"></i>
+                            </a>-->
+                            <a class="blue-grey-text text-darken-1" href="http://javitoro.com">
+                                <i class="fa fa-globe"></i>
                             </a>
                             <a class="blue-grey-text text-darken-1" href="https://twitter.com/JaviToroF">
                                 <i class="fa fa-twitter"></i>
@@ -193,8 +197,8 @@
                                 <i class="fa fa-google-plus"></i>
                             </a>
                             <!--<a class="blue-text text-lighten-2" href="">
-                                <i class="fa fa-linkedin-square"></i>-->
-                            </a>
+                                <i class="fa fa-linkedin-square"></i>
+                            </a>-->
                         </p>
                     </div>
                 </div>
@@ -235,6 +239,13 @@
 <footer id="contact" class="page-footer default_color scrollspy">
     <div class="container">  
         <div class="row">
+            <div class="col l3 s12">
+                <h5 class="white-text">Email</h5>
+                <ul>
+                    <li><p class="grey-text text-lighten-4">If you have an idea for a project, you want a vector portrait, or you just want to talk about something:</p></li>
+                    <li><a class="waves-effect waves-light btn pink accent-2" href="mailto:laureano.ruiz.perez@gmail.com"><i class="material-icons right">mail</i>Contact me</a></li>
+                </ul>
+            </div>
             <div class="col l6 s12">
                 <h5 class="white-text">Social</h5>
                 <ul>
@@ -264,7 +275,7 @@
                     </li>
                     <li>
                         <a class="white-text" href="https://www.youtube.com/channel/UCOEFzq2gPtcDEO0e4Yw9s3w">
-                            <i class="small fa fa-youtube-square white-tex"></i> Casual Youtube channel, still on spanish
+                            <i class="small fa fa-youtube-square white-tex"></i> Casual YouTube channel, still on spanish
                         </a>
                     </li>
                      <li>
@@ -274,9 +285,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Send me an email:</h5>
-                <a class="waves-effect waves-light btn teal" href=""><i class="material-icons right">mail</i>Copy email</a>
                 <!--REMOVED UNTIL FIX <form class="col s12" action="contact.php" method="post">
                     <div class="row">
                         <div class="input-field col s6">
@@ -293,13 +301,12 @@
                             <i class="mdi-editor-mode-edit prefix white-text"></i>
                             <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
                             <label for="icon_prefix2" class="white-text">Message</label>
-                        </div>-->
+                        </div>
                         
-                        <!--<button class="btn waves-effect waves-light teal darken-1" type="submit">Send <i class="mdi-content-send right white-text"></i>
-                        </button>-->
+                        <button class="btn waves-effect waves-light teal darken-1" type="submit">Send <i class="mdi-content-send right white-text"></i>
+                        </button>
                     </div>
-                </form>    
-            </div>
+                </form>-->  
         </div>
     </div>
     <div class="footer-copyright default_color">
@@ -315,8 +322,12 @@
     <script src="min/custom-min.js"></script>
     <script>
         //Initialize materializecss dropdown
-        $('.dropdown-button').dropdown();
-    </script>
+        $('.dropdown-button').dropdown({
+            hover: false,
+            belowOrigin: false,
+            }
+            );
+    </script>
 
     </body>
 </html>
