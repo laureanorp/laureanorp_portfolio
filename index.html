@@ -39,7 +39,7 @@
                     <li><a href="#">English</a></li>
                     <li><a href="http://laureanoruiz.com/es/">Spanish</a></li>
                 </ul>
-                <li><a class="dropdown-button" data-beloworigin="false" href="#!" data-activates="dropdown"><i class="material-icons">language</i></a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="material-icons">language</i></a></li>
             </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             </div>
         </div>
@@ -302,12 +302,18 @@
     <script src="min/plugin-min.js"></script>
     <script src="min/custom-min.js"></script>
     <script>
-        //Initialize materializecss dropdown
-        $('.dropdown-button').dropdown({
-            hover: false,
-            belowOrigin: false,
-            }
-            );
+    //Initialize materializecss dropdown
+    $('.dropdown-button').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrainWidth: false, // Does not change width of dropdown to that of the activator
+        hover: false, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: true, // Displays dropdown below the button
+        alignment: 'left', // Displays dropdown with edge aligned to the left of button
+        stopPropagation: false // Stops event propagation
+        }
+        );
     </script>
     <!--<script>
         $(document).ready(function() {
