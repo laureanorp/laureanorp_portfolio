@@ -259,7 +259,10 @@
 		e.target.style['visibility'] = 'hidden';
 		e.target.style['zIndex'] = 2;
 	}
-
+     $(document).ready(function(){
+        // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $('.modal').modal();
+      });
 	// [].forEach.call(card, function(card) {
 	// 	card.addEventListener('click', scaleCard, false);
 	// });

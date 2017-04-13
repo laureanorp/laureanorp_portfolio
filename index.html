@@ -11,6 +11,8 @@
     <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="/favicon-highres.png" sizes="192x192">
     <!-- Custom CSS -->
     <style>
@@ -25,7 +27,10 @@
         #social {
             display: flex;
             justify-content: space-around;
-            padding: 1rem 14rem;
+            padding: 0.8rem 14rem;
+        }
+        #collapsible {
+            padding: 0rem 0rem;
         }
         @media only screen and (max-device-width: 1080px) {
 		#social {
@@ -34,8 +39,8 @@
             padding: 1rem 0rem;
         }
 		}
-        #mail_form {
-            padding: 2rem;
+        #copy {
+            padding: 1.8rem;
         }
         .brand-logo{
             position:absolute;
@@ -45,7 +50,7 @@
             font-style:normal;
             font-weight:200;
             padding:0;
-            letter-spacing:4px
+            letter-spacing:0px
         }
         .text_h2{
             font-size:1rem
@@ -53,6 +58,7 @@
             margin-bottom:4%;
             line-height:4.5rem
         }
+
     </style>
 </head>
     
@@ -67,20 +73,20 @@
 </div>
 
 <!--Navigation-->
- <div class="navbar-fixed">
-    <nav id="nav_f" class="default_color" role="navigation">
+ <div class="nav-wrapper">
+    <nav id="nav_f" class="white" role="navigation">
         <div class="container">
-            <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo">Laureano Ruiz</a>
+            <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo grey-text text-darken-4">Laureano Ruiz</a>
             <ul id="nav-mobile" class="right side-nav">
-                <!--<li><a href="#intro">About</a></li>-->
-                <li><a href="#work">work</a></li>
-                <li><a href="#team">partners</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a class="grey-text text-darken-4" href="#intro">about</a></li>
+                <li><a class="grey-text text-darken-4" href="#work">work</a></li>
+                <!--<li><a href="#team">partners</a></li>-->
+                <li><a class="grey-text text-darken-4" href="#contact">contact</a></li>
                 <ul id="dropdown" class="dropdown-content">
                     <li><a href="#">English</a></li>
                     <li><a href="http://laureanoruiz.com/es/">Spanish</a></li>
                 </ul>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="material-icons">language</i></a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="mdi mdi-web grey-text text-darken-4"></i></a></li>
             </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             </div>
         </div>
@@ -113,21 +119,21 @@
 
             <div class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="material-icons grey-text text-darken-4">create</i>
+                    <i class="mdi mdi-pencil grey-text text-darken-4"></i>
                     <h5 class="promo-caption">Design</h5>
                     <p class="light center">Vectorization, Material Design, flat, icons, logos... One of my favourite hobbies.</p>
                 </div>
             </div>
             <div  class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="material-icons grey-text text-darken-4">local_florist</i>
+                    <i class="mdi mdi-flower grey-text text-darken-4"></i>
                     <h5 class="promo-caption">Biology</h5>
                     <p class="light center">From ADN to edaphology. I study the beautiful science of life.</p>
                 </div>
             </div>
             <div class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="material-icons grey-text text-darken-4">phonelink_setup</i>
+                    <i class="mdi mdi-cellphone-link grey-text text-darken-4"></i>
                     <h5 class="promo-caption">Technology</h5>
                     <p class="light center">When I'm not studying, I like reading about what moves our world.</p>
                 </div>
@@ -135,11 +141,12 @@
         </div>
     </div>
 </div>
+    
 
-<!--Work-->
+<!--Works-->
 <div class="section scrollspy" id="work">
     <div class="container">
-        <h2 class="header text_b">My work</h2>
+        <h2 class="header text_b">Works</h2>
         <div class="row">
             <!--SIRU-->
             <div class="col s12 m4 l4">
@@ -148,11 +155,11 @@
                         <img class="activator" src="img/Siru.png">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Siru Icon Pack<i class="mdi-navigation-more-vert right"></i></span>
+                        <span class="card-title activator grey-text text-darken-4">Siru Icon Pack</span>
                         <p><a href="https://play.google.com/store/apps/details?id=com.dotsillustration.siru">Google Play</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Siru Icon Pack<i class="mdi-navigation-close right"></i></span>
+                        <span class="card-title grey-text text-darken-4">Siru Icon Pack<i class="mdi mdi-close right"></i></span>
                         <p>Siru is an icon pack for Android developed by Javi Toro and me, based on Material Design guidelines.</p>
                     </div>
                 </div>
@@ -164,11 +171,11 @@
                         <img class="activator" src="img/PradaVector.png">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Vectors<i class="mdi-navigation-more-vert right"></i></span>
+                        <span class="card-title activator grey-text text-darken-4">Vectors</span>
                         <p><a href="https://plus.google.com/collection/YE4I2">View all</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Vectors portraits<i class="mdi-navigation-close right"></i></span>
+                        <span class="card-title grey-text text-darken-4">Vectors portraits<i class="mdi mdi-close right"></i></span>
                         <p>Vector portraits I make for people, animals or things.</p>
                     </div>
                 </div>
@@ -180,11 +187,11 @@
                         <img class="activator" src="img/Siru.png">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Train Tickets<i class="mdi-navigation-more-vert right"></i></span>
+                        <span class="card-title activator grey-text text-darken-4">Train Tickets</span>
                         <p><a href="https://play.google.com/store/apps/details?id=com.dotsillustration.siru">?????</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Train Tickets album art<i class="mdi-navigation-close right"></i></span>
+                        <span class="card-title grey-text text-darken-4">Train Tickets album art<i class="mdi mdi-close right"></i></span>
                         <p>????</p>
                     </div>
                 </div>
@@ -196,11 +203,11 @@
                         <img class="activator" src="img/Siru.png">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Train Talks<i class="mdi-navigation-more-vert right"></i></span>
+                        <span class="card-title activator grey-text text-darken-4">Train Talks</span>
                         <p><a href="https://play.google.com/store/apps/details?id=com.dotsillustration.siru">?????</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Train Talks album art<i class="mdi-navigation-close right"></i></span>
+                        <span class="card-title grey-text text-darken-4">Train Talks album art<i class="mdi mdi-close right"></i></span>
                         <p>??????</p>
                     </div>
                 </div>
@@ -212,45 +219,15 @@
                         <img class="activator" src="img/Siru.png">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Spotify playlist covers<i class="mdi-navigation-more-vert right"></i></span>
+                        <span class="card-title activator grey-text text-darken-4">Playlists covers</span>
                         <p><a href="https://play.google.com/store/apps/details?id=com.dotsillustration.siru">?????</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Spotify playlists<i class="mdi-navigation-close right"></i></span>
+                        <span class="card-title grey-text text-darken-4">Playlists covers<i class="mdi mdi-close right"></i></span>
                         <p>?????</p>
                     </div>
                 </div>
             </div>
-            <!--<div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/Siru.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Icon for Monthly<i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="https://play.google.com/store/apps/details?id=com.dotsillustration.siru">Google Play</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Icon for Monthly<i class="mdi-navigation-close right"></i></span>
-                        <p>Icon designed along with Javi Toro (my partner at Dots Illustration) for an new app by Javier Santos.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/Siru.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Redesigned icon for ML Manager<i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="https://play.google.com/store/apps/details?id=com.dotsillustration.siru">Google Play</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Redesigned icon for ML Manager<i class="mdi-navigation-close right"></i></span>
-                        <p>Redesigned icon for this famous app by Javier Santos. The icon was made by Javi Toro and me (Dots Illustration team).</p>
-                    </div>
-                </div>
-            </div>-->
         </div>
     </div>
 </div>
@@ -260,12 +237,12 @@
     <div class="parallax"><img src="img/parallax.jpg"></div>
 </div>
 
-<!--Partners-->
+<!--Partners
 <div class="section scrollspy" id="team">
     <div class="container">
         <h2 class="header text_b">Partners</h2>
-        <div class="row">
-            <!--JAVI TORO-->
+        <div class="row">-->
+            <!--JAVI TORO
             <div class="col s12 m3">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
@@ -276,8 +253,8 @@
                         <p>??</p>
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Javi Toro<i class="mdi-navigation-more-vert right"></i><br/>
-                        <small><em><a class="pink-text.text-accent-3">My mentor</a></em></small>
+                        <span class="card-title activator grey-text text-darken-4">Javi Toro<br/>
+                        <small><em><a class="activator pink-text.text-accent-3">My mentor</a></em></small>
                         <p>
                         <a class="grey-text text-darken-3" href="http://javitoro.com">
                             <i class="material-icons">public</i>
@@ -292,8 +269,8 @@
                         </span>
                     </div>
                 </div>
-             </div>
-            <!--YURIY-->
+             </div>-->
+            <!--YURIY
             <div class="col s12 m3">
                 <div class="card card-avatar">
                     <div class="waves-effect waves-block waves-light">
@@ -304,8 +281,8 @@
                         <p>He loves JavaScript, HTML and CSS, and is one of those few people who likes coding as a hobbie. (Psst: He helped me with this web).</p>
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Yuriy B.<i class="mdi-navigation-more-vert right"></i><br/>
-                        <small><em><a class="pink-text.text-accent-3">A friend</a></em></small>
+                        <span class="card-title activator grey-text text-darken-4">Yuriy B.<br/>
+                        <small><em><a class="activator pink-text.text-accent-3">A friend</a></em></small>
                         <p>
                         <a class="grey-text text-darken-3" href="http://senseweather.tk">
                             <i class="material-icons">public</i>
@@ -323,28 +300,45 @@
              </div>
         </div>
      </div>
-</div>
+</div>-->
 
 <!--Footer-->
 <footer id="contact" class="page-footer default_color scrollspy">
-        <div class="col s10 pink" id="social">
+        <div class="col s10 pink accent-3" id="social">
                 <a class="white-text" href="https://plus.google.com/+LaureanoRuizPérez">
-                    <i class="fa fa-google-plus fa-2x grey-text text-darken-4"></i>
+                    <i class="mdi mdi-google-plus mdi-36px grey-text text-darken-4"></i>
                 </a>
                 <a class="white-text" href="https://twitter.com/laureanorp">
-                    <i class="fa fa-twitter fa-2x grey-text text-darken-4"></i>
+                    <i class="mdi mdi-twitter mdi-36px grey-text text-darken-4"></i>
                 </a>
-                <!--<a class="white-text" href="mailto:laureano.ruiz.perez@gmail.com">
-                    <i class="material-icons grey-text text-darken-4">mail</i>
-                </a>-->
+                <!-- Modal Trigger -->
+                <a class="white-text" href="#modal1">
+                    <i class="mdi mdi-email mdi-36px grey-text text-darken-4"></i>
+                </a>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal bottom-sheet">
+                    <div class="modal-content">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
                 <a class="white-text" href="https://www.instagram.com/laureano.svg/">
-                    <i class="fa fa-instagram fa-2x grey-text text-darken-4"></i>
+                    <i class="mdi mdi-instagram mdi-36px grey-text text-darken-4"></i>
                 </a>
                 <a class="white-text" href="https://www.linkedin.com/in/laureano-ruiz-p%C3%A9rez-09b6a7108/">
-                    <i class="fa fa-linkedin fa-2x grey-text text-darken-4"></i>
+                     <i class="mdi mdi-linkedin mdi-36px grey-text text-darken-4"></i>
                 </a>
         </div>
-    <div class="container"> 
+     <div class="col s10 grey darken-4" id="copy">
+        <div align="center" class="grey-text text-darken-3">
+            This website is created by Laureano Ruiz using <a class="grey-text text-darken-2" href="http://materializecss.com/">MaterializeCSS</a>.
+        </div>
+    </div>
+        
+    <!--<div class="container"> 
         <form class="col s10" id="mail_form" align="center" action="https://formspree.io/laureano.ruiz.perez@gmail.com" method="POST">
             <div class="row">
                 <div class="input-field col s6 ">
@@ -368,30 +362,9 @@
                     </button>
                 </div>
         </form>
-    </div>
-            <!--OLD CONTACT-->
-            <!--<div class="col l3 s12">
-                <h5 class="white-text">Email</h5>
-                <ul>
-                    <li><p class="grey-text text-lighten-4">If you have an idea for a project, or you just want to talk about something:</p></li>
-                    <li><a class="waves-effect waves-light btn pink accent-3" href="mailto:laureano.ruiz.perez@gmail.com"><i class="material-icons right">mail</i>Contact me</a></li>
-                </ul>
-            </div>
-            <!--DONATE ME (no ones gonna do it, cmon-->
-            <!--<div class="col l3 s12">
-                <h5 class="white-text">Donate</h5>
-                <ul>
-                    <li><p class="grey-text text-lighten-4">Also, if you want to help me to improve my work, you can buy me a coffee:</p></li>
-                    <li><a class="waves-effect waves-light btn pink accent-3" href="https://www.paypal.me/LaureanoRuiz"><i class="material-icons right">payment</i>Support me</a></li>
-                </ul>
-            </div>-->
-    <div class="footer-copyright default_color">
-        <div class="container">
-            <div align="center" class="grey-text text-darken-3">
-                This web is created by Laureano Ruiz using <a class="grey-text text-darken-2" href="http://materializecss.com/">MaterializeCSS</a> and <a class="grey-text text-darken-2" href="http://joashpereira.com">Joash Pereira</a>'s awesome template.
-            </div>
-        </div>
-    </div>
+    </div>-->
+            
+    
 </footer>
 
     <!--  Scripts-->
@@ -399,8 +372,12 @@
     <script src="min/custom-min.js"></script>
     <script>
     
+    //Modal for mail
+    $('.modal1').ready(function(){
+        $('.modal').modal();
+    });
         
-    //Initialize materializecss dropdown
+    //Language Dropdown
     $('.dropdown-button').dropdown({
         inDuration: 300,
         outDuration: 225,
@@ -413,6 +390,7 @@
         }
         );
     </script>
+    
     <!--<script>
         $(document).ready(function() {
         $('a[href=#top]').click(function(){
@@ -421,6 +399,7 @@
         });
     })
     </script>-->
+    
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
