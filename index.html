@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="theme-color" content="#FAFAFA">
+    <meta name="theme-color" content="#1de9b6">
     <title>Sobre Laureano</title>
 
     <!-- CSS  -->
@@ -69,7 +69,7 @@
     
 <body id="top" class="scrollspy">
 
-<!-- Pre Loader -->
+<!--Pre Loader-->
 <div id="loader-wrapper">
     <div id="loader"></div>
     <div class="loader-section section-left"></div>
@@ -80,10 +80,10 @@
  <div class="nav-wrapper">
     <nav class="white" role="navigation">
         <div class="container">
-            <div class="nav-wrapper"><a id="logo-container" href="#top" class="logo grey-text text-darken-4">Laureano Ruiz Pérez</a>
+            <div class="nav-wrapper"><a id="logo-container" href="#top" class="logo grey-text text-darken-4">Laureano Ruiz</a>
             <ul id="nav-mobile" class="right side-nav">
+                 <li><a class="nav-categories grey-text text-darken-4" href="#curriculum">Curriculum</a></li>
                 <li><a class="nav-categories grey-text text-darken-4" href="#designs">Designs</a></li>
-                <li><a class="nav-categories grey-text text-darken-4" href="#curriculum">Curriculum</a></li>
                 <li><a class="nav-categories grey-text text-darken-4" href="#contact">Concact</a></li>
                 <ul id="dropdown" class="dropdown-content">
                     <li><a href="#">English</a></li>
@@ -329,38 +329,42 @@
             
 </footer>
     
-    <!--  Scripts-->
-    <script src="min/plugin-min.js"></script>
-    <script src="min/custom-min.js"></script>
-    <script>
-         //Modals
-         $(document).ready(function(){
-         $('.modal-trigger').leanModal();
-         });
-        
-        //Language Dropdown
-        $('.dropdown-button').dropdown({
-            inDuration: 300,
-            outDuration: 225,
-            constrainWidth: false, // Does not change width of dropdown to that of the activator
-            hover: false, // Activate on hover
-            gutter: 0, // Spacing from edge
-            belowOrigin: false, // Displays dropdown below the button
-            alignment: 'left', // Displays dropdown with edge aligned to the left of button
-            stopPropagation: false // Stops event propagation
-            }
-            );
-    </script> 
-    
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<!--Scripts-->
+<script src="min/plugin-min.js"></script>
+<script src="min/custom-min.js"></script>
+<script>
+    //ScrollSpy
+    $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+    });
+     //Modals
+     $(document).ready(function(){
+     $('.modal-trigger').leanModal();
+     });
 
-      ga('create', 'UA-67484305-1', 'auto');
-      ga('send', 'pageview');
-    </script>
+    //Language Dropdown
+    $('.dropdown-button').dropdown({
+        inDuration: 300,
+        outDuration: 225,
+        constrainWidth: false, // Does not change width of dropdown to that of the activator
+        hover: false, // Activate on hover
+        gutter: 0, // Spacing from edge
+        belowOrigin: false, // Displays dropdown below the button
+        alignment: 'left', // Displays dropdown with edge aligned to the left of button
+        stopPropagation: false // Stops event propagation
+        }
+        );
+</script> 
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67484305-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 </body>
 </html>
