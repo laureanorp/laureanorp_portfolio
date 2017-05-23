@@ -3,14 +3,14 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="theme-color" content="#212121">
-    <title>Laureano Ruiz</title>
+    <meta name="theme-color" content="#FAFAFA">
+    <title>Sobre Laureano</title>
 
     <!-- CSS  -->
     <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
     <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+     <!-- Fonts  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
@@ -30,9 +30,6 @@
             justify-content: space-around;
             padding: 0.2rem 14rem;
         }
-        #collapsible {
-            padding: 0rem 0rem;
-        }
         @media only screen and (max-device-width: 1080px) {
 		#social {
             display: flex;
@@ -41,25 +38,24 @@
         }
 		}
         #copy {
-            padding: 1.8rem;
+            padding: 1rem;
         }
-        .brand-logo{
-            position:absolute;
-            color:#fff;
-            display:inline-block;
-            font-size:1rem;
-            font-style:normal;
-            font-weight:200;
-            padding:0;
-            letter-spacing:0px
+        .titles{
+            font-family: "Roboto Mono";
+            font-size: 25px;
         }
-        .text_h2{
-            font-size:1rem
-            font-weight:200;
-            margin-bottom:4%;
-            line-height:4.5rem
+        .phones{
+            font-family: "Roboto Mono";
+            font-size: 16px;
         }
-
+        .container {
+            margin: 0 auto;
+            max-width: 1280px;
+            width: 75%;
+        }
+        .logo {
+            font-size: 1.5rem;
+        }
     </style>
 </head>
     
@@ -72,16 +68,16 @@
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
 </div>
-
+    
 <!--Navigation-->
  <div class="nav-wrapper">
     <nav id="nav_f" class="white" role="navigation">
         <div class="container">
-            <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo grey-text text-darken-4">Laureano Ruiz</a>
+            <div class="nav-wrapper"><a id="logo-container" href="#top" class="logo grey-text text-darken-4">Laureano Ruiz Pérez</a>
             <ul id="nav-mobile" class="right side-nav">
-                <li><a class="grey-text text-darken-4" href="#work">work</a></li>
-                <li><a class="grey-text text-darken-4" href="#contact">contact</a></li>
-                 <li><a class="grey-text text-darken-4" href="http://laureanoruiz.com/about/">about</a></li>
+                <li><a class="grey-text text-darken-4" href="#designs">Designs</a></li>
+                <li><a class="grey-text text-darken-4" href="#curriculum">Curriculum</a></li>
+                <li><a class="grey-text text-darken-4" href="#contact">Concact</a></li>
                 <ul id="dropdown" class="dropdown-content">
                     <li><a href="#">English</a></li>
                     <li><a href="http://laureanoruiz.com/es/">Spanish</a></li>
@@ -92,64 +88,84 @@
         </div>
     </nav>
 </div>
-
-<!--HERO (TEXTO DINÁMICO)-->
-<!--<div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-        <h1 class="text_h center header cd-headline letters type">
-            <span>I like </span> 
-            <span class="cd-words-wrapper waiting">
-                <b class="is-visible">biology</b>
-                <b>designing</b>
-                <b>technology</b>
-            </span>
-        </h1>
-    </div>
-</div>-->
-
-<!--Intro and service-->
+    
+<!--Intro-->
 <div class="section scrollspy">
     <div class="container">
-        <center><img class="activator" src="img/myself.png"  height="270" width="270"> </center>
+        <center><img class="activator" src="img/myself.png"  height="200" width="200"></center>
         <div class="row">
-            <div  class="col s12">
-                <h2 class="center header text_h2">My name is <span class="span_h2">Laureano. </span>I'm 19 years old and I'm from Spain. This is my design portfolio.</h2>
-            </div>
-
             <div class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="mdi mdi-pencil grey-text text-darken-4"></i>
-                    <h5 class="promo-caption">Design</h5>
-                    <p class="light center">Vectorization, Material Design, flat, icons, logos... One of my favourite hobbies.</p>
+                    <i class="mdi mdi-dna mdi-48px blue-text text-accent-3"></i>
+                    <h5>Biología</h5>
+                    <p align="center">Desde los más básicos aminoácidos hasta la edafología. Estudio la bella ciencia de la vida.</p>
                 </div>
             </div>
             <div  class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="mdi mdi-flower grey-text text-darken-4"></i>
-                    <h5 class="promo-caption">Biology</h5>
-                    <p class="light center">From ADN to edaphology. I study the beautiful science of life.</p>
+                    <i class="mdi mdi-pencil mdi-48px amber-text"></i>
+                    <h5>Diseño</h5>
+                    <p align="center">Vectorización, Material Design, Flat design, iconos, logos... Mi herramienta más preciada.</p>
                 </div>
             </div>
             <div class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="mdi mdi-cellphone-link grey-text text-darken-4"></i>
-                    <h5 class="promo-caption">Technology</h5>
-                    <p class="light center">When I'm not studying, I like reading about what moves our world.</p>
+                    <i class="mdi mdi-fire mdi-48px red-text"></i>
+                    <h5>Motivación</h5>
+                    <p align="center">Es un hecho que cuando me planteo conseguir algo, trabajo tan duro como haga falta.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
     
-<!--Parallax-->
-<div class="parallax-container">
-    <div class="parallax"><img src="img/parallax.jpg"></div>
-</div>
+<div class="divider"></div>    
     
-<!--Work-->
-<div class="section scrollspy" id="work">
+<!--Curriculum-->
+<div class="section scrollspy" id="curriculum">
+    <div class="container" align="justify"> 
+        <h3>Curriculum Vitae</h3>
+        <h5 class="titles">Actividad actual</h5>
+        <p>
+        Cursando 3º de Grado en Biología en la Universidad de La Laguna, Tenerife. Diseño gráfico de iconos, logos e interfaces como hobby.
+        </p>
+        <h5 class="titles">Estudios</h5>
+        <p>
+        Bachillerato en IES Valle de Guerra (2013 - 2015)</p><p>Grado en Biología en la universidad de La Laguna (2015 - Presente)</p>
+        <h5 class="titles">Habilidades</h5>
+        <p>
+        Esquemático, perfeccionista, con gusto por aprender y proactivo. Buena habilidad de orientación con programas y sistemas operativos nuevos.
+        </p>
+        <b>Conocimientos de programación</b> básicos en Python, HTML/CSS y Google App Inventor (lenguaje gráfico para aplicaciones Android). Certificado Computer Science 101 en Stanford Online (Accomplishment 86%).
+        <p>
+        Usuario de sistemas operativos de escritorio: Mac OS X (de Leopard a Sierra), Windows (de 7 a 10).
+        Experiencia alta en sistema operativo Android como usuario: desde 2.2 Froyo hasta 7.1.1 Nougat, bien informado de la lista de cambios de cada versión. Al día del ecosistema y de la mayoría de servicios de Google.
+        </p>
+        <p>
+        <b>Software de oficina:</b> Procesadores de texto, hojas de cálculo, y presentaciones. 
+        </p>
+        <p>
+        <b>Software de diseño gráfico:</b> Nivel alto en Adobe Illustrator y conocimientos más limitados de Photoshop. Portfolio de diseño: www.laureanoruiz.com
+        </p>
+        <h5 class="titles">Idiomas</h5>
+        <p>
+        Español nativo.
+        Inglés de nivel B1 (Trinity College London).
+        </p>
+        <h5 class="titles">Otras actividades</h5>
+        <p>
+        Práctica de deportes: Cinturón negro de kárate (primer dan), Ultimate Frisbee y bicicleta.
+        Título de Árbitro Regional de Kárate.
+        </p>    
+    </div>  
+</div>
+  
+<div class="divider"></div> 
+
+<!--Desgings-->
+<div class="section scrollspy" id="designs">
     <div class="container">
-        <h2 class="header text_b">Work</h2>
+        <h3>Designs</h3>
         <div class="row">
             <!--SIRU-->
             <div class="col s12 m4 l4">
@@ -235,94 +251,61 @@
     </div>
 </div>
 
-<!--Partners
-<div class="section scrollspy" id="team">
-    <div class="container">
-        <h2 class="header text_b">Partners</h2>
-        <div class="row">-->
-            <!--JAVI TORO
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/javitoro.png">
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Javi Toro<i class="mdi-navigation-close right"></i></span>
-                        <p>??</p>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Javi Toro<br/>
-                        <small><em><a class="activator pink-text.text-accent-3">My mentor</a></em></small>
-                        <p>
-                        <a class="grey-text text-darken-3" href="http://javitoro.com">
-                            <i class="material-icons">public</i>
-                        </a>
-                        <a class="grey-text text-darken-3" href="https://twitter.com/JaviToroF">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="grey-text text-darken-3" href="https://plus.google.com/+javitoro95/">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                        </p>
-                        </span>
-                    </div>
-                </div>
-             </div>-->
-            <!--YURIY
-            <div class="col s12 m3">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/yuriy.jpeg">
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Yuriy B.<i class="mdi-navigation-close right"></i></span>
-                        <p>He loves JavaScript, HTML and CSS, and is one of those few people who likes coding as a hobbie. (Psst: He helped me with this web).</p>
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Yuriy B.<br/>
-                        <small><em><a class="activator pink-text.text-accent-3">A friend</a></em></small>
-                        <p>
-                        <a class="grey-text text-darken-3" href="http://senseweather.tk">
-                            <i class="material-icons">public</i>
-                        </a>
-                        <a class="grey-text text-darken-3" href="https://twitter.com/yuriy636">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="grey-text text-darken-3" href="https://plus.google.com/+yuriyburychka">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                        </p>
-                        </span>
-                    </div>
-                </div>
-             </div>
-        </div>
-     </div>
-</div>-->
-
 <!--Footer-->
-<footer id="contact" class="page-footer default_color scrollspy">
-        <div class="col s10 pink accent-3" id="social">
+<footer id="contact" class="page-footer grey darken-4 scrollspy">
+        <div class="col s10 teal accent-3" id="social">
                 <a class="white-text" href="https://plus.google.com/+LaureanoRuizPérez">
                     <i class="mdi mdi-google-plus mdi-36px grey-text text-darken-4"></i>
                 </a>
                 <a class="white-text" href="https://twitter.com/laureanorp">
                     <i class="mdi mdi-twitter mdi-36px grey-text text-darken-4"></i>
                 </a>
-                <!-- Modal Trigger -->
-                <a class="white-text" href="#modal1">
-                    <i class="mdi mdi-email mdi-36px grey-text text-darken-4"></i>
-                </a>
+
+                <!-- Email Modal Trigger -->
+                <i class="mdi mdi-email mdi-36px grey-text text-darken-4 modal-trigger" href="#modal1"></i>
+            
                 <!-- Modal Structure -->
-                <div id="modal1" class="modal bottom-sheet">
-                    <div class="modal-content">
-                        <h4>Modal Header</h4>
-                        <p>A bunch of text</p>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-                    </div>
+                <div id="modal1" class="modal bottom-sheet grey lighten-5">
+                <div class="modal-content">
+                  <h5 class="grey-text text-darken-3">Contactar por correo</h5>
+                        <form class="col s10" id="mail_form" align="center" action="https://formspree.io/laureano.ruiz.perez@gmail.com" method="POST">
+                            <div class="row">
+                                <div class="input-field col s6 ">
+                                    <i class="mdi mdi-account-circle prefix grey-text text-darken-3"></i>
+                                    <input type="text" name="name" id="name">
+                                    <label for="name" class="grey-text text-darken-3">Tu nombre</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="mdi mdi-email prefix grey-text text-darken-3"></i>
+                                    <input type="email" name="_replyto" id="email">
+                                    <label for="email" class="grey-text text-darken-3">Tu email</label>
+                                </div>
+                            </div>
+                                <div class="input-field col s12">
+                                    <i class="mdi mdi-pencil prefix grey-text text-darken-3"></i>
+                                    <textarea id="message" name="message" class="materialize-textarea grey-text text-darken-3"></textarea>
+                                    <label for="message" class="grey-text text-darken-3">Mensaje</label>
+                                </div>
+                                <div align="right">
+                                    <button class="btn waves-effect waves-light teal accent-3" type="submit">Enviar <i class="mdi mdi-send right white-text"></i>
+                                    </button>
+                                </div>
+                        </form>
                 </div>
+                </div>
+               
+                <!-- Phone Modal Trigger -->
+                <i class="mdi mdi-phone mdi-36px grey-text text-darken-4 modal-trigger" href="#modal2"></i>
+            
+                <!-- Phone modal Structure -->
+                <div id="modal2" class="modal bottom-sheet grey lighten-5">
+                <div class="modal-content">
+                  <h5 class="grey-text text-darken-3">Contactar por teléfono</h5>
+                    <p class="phones">Móvil: +34 628 38 89 09</p>
+                    <p class="phones">Fijo: 922 54 68 18</p>
+                </div>
+                </div>
+
                 <a class="white-text" href="https://www.instagram.com/laureano.svg/">
                     <i class="mdi mdi-instagram mdi-36px grey-text text-darken-4"></i>
                 </a>
@@ -330,73 +313,37 @@
                      <i class="mdi mdi-linkedin mdi-36px grey-text text-darken-4"></i>
                 </a>
         </div>
-     <div class="col s10 grey darken-4" id="copy">
+    
+    <div class="col s10 grey darken-4" id="copy">
         <div align="center" class="grey-text text-darken-3">
-            This website is created by Laureano Ruiz using <a class="grey-text text-darken-2" href="http://materializecss.com/">MaterializeCSS</a>.
+            Esta web ha sido creada por Laureano Ruiz usando <a class="grey-text text-darken-2" href="http://materializecss.com/">MaterializeCSS</a>.
         </div>
     </div>
-        
-    <!--<div class="container"> 
-        <form class="col s10" id="mail_form" align="center" action="https://formspree.io/laureano.ruiz.perez@gmail.com" method="POST">
-            <div class="row">
-                <div class="input-field col s6 ">
-                    <i class="mdi-action-account-circle prefix white-text"></i>
-                    <input type="text" name="name" id="name">
-                    <label for="name" class="white-text">Your name</label>
-                </div>
-                <div class="input-field col s6">
-                    <i class="mdi-communication-email prefix white-text"></i>
-                    <input type="email" name="_replyto" id="email">
-                    <label for="email" class="white-text">Your email</label>
-                </div>
-            </div>
-                <div class="input-field col s12">
-                    <i class="mdi-editor-mode-edit prefix white-text"></i>
-                    <textarea id="message" name="message" class="materialize-textarea white-text"></textarea>
-                    <label for="message" class="white-text">Message</label>
-                </div>
-                <div align="right">
-                    <button class="btn waves-effect waves-light pink accent-3" type="submit">Send <i class="mdi-content-send right white-text"></i>
-                    </button>
-                </div>
-        </form>
-    </div>-->
             
-    
 </footer>
-
+    
     <!--  Scripts-->
     <script src="min/plugin-min.js"></script>
     <script src="min/custom-min.js"></script>
     <script>
-    
-    //Modal for mail
-    $('.modal1').ready(function(){
-        $('.modal').modal();
-    });
+         //Modals
+         $(document).ready(function(){
+         $('.modal-trigger').leanModal();
+         });
         
-    //Language Dropdown
-    $('.dropdown-button').dropdown({
-        inDuration: 300,
-        outDuration: 225,
-        constrainWidth: false, // Does not change width of dropdown to that of the activator
-        hover: false, // Activate on hover
-        gutter: 0, // Spacing from edge
-        belowOrigin: true, // Displays dropdown below the button
-        alignment: 'left', // Displays dropdown with edge aligned to the left of button
-        stopPropagation: false // Stops event propagation
-        }
-        );
-    </script>
-    
-    <!--<script>
-        $(document).ready(function() {
-        $('a[href=#top]').click(function(){
-            $('html, body').animate({scrollTop:0}, 'slow');
-            return false;
-        });
-    })
-    </script>-->
+        //Language Dropdown
+        $('.dropdown-button').dropdown({
+            inDuration: 300,
+            outDuration: 225,
+            constrainWidth: false, // Does not change width of dropdown to that of the activator
+            hover: false, // Activate on hover
+            gutter: 0, // Spacing from edge
+            belowOrigin: false, // Displays dropdown below the button
+            alignment: 'left', // Displays dropdown with edge aligned to the left of button
+            stopPropagation: false // Stops event propagation
+            }
+            );
+    </script> 
     
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
