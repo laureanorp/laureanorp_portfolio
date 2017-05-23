@@ -30,6 +30,8 @@
             justify-content: space-around;
             padding: 0.2rem 14rem;
         }
+        .hide-pc {display:none;
+        }
         @media only screen and (max-device-width: 720px) {
 		#social {
             display: flex;
@@ -39,8 +41,9 @@
         .container {
             width: 90%;
         }
-        .mobile-hide{ display: none;
-		}
+        .hide-pc {display:block;
+        }
+        }
         
         #copy {
             padding: 1.4rem;
@@ -90,11 +93,16 @@
                  <li><a class="nav-categories grey-text text-darken-4" href="#curriculum">Curriculum</a></li>
                 <li><a class="nav-categories grey-text text-darken-4" href="#designs">Designs</a></li>
                 <li><a class="nav-categories grey-text text-darken-4" href="#contact">Contact</a></li>
-                <ul id="dropdown" class="dropdown-content">
+                <li><a class="hide-pc dropdown-button" href="#!" data-activates="dropdown1"><i class="mdi mdi-pencil grey-text text-darken-4"></i></a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown2"><i class="mdi mdi-web grey-text text-darken-4"></i></a></li>
+                <ul id="dropdown2" class="dropdown-content">
                     <li><a href="#">English</a></li>
                     <li><a href="http://laureanoruiz.com/es/">Spanish</a></li>
                 </ul>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="mdi mdi-web grey-text text-darken-4"></i></a></li>
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                </ul>
             </ul>
             </div>
         </div>
@@ -109,7 +117,7 @@
         <div class="row">
             <div class="col s12 m4 l4">
                 <div class="center promo promo-example">
-                    <i class="mobile-hide mdi mdi-dna teal-text text-accent-3" style="font-size: 4.5rem"></i>
+                    <i class="mdi mdi-dna teal-text text-accent-3" style="font-size: 4.5rem"></i>
                     <h5 class="titles">Biología</h5>
                     <p align="center">Desde los más básicos aminoácidos hasta la edafología. Estudio la bella ciencia de la vida.</p>
                 </div>
