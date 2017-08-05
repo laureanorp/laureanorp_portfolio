@@ -1,0 +1,46 @@
+/*!
+ *Code by Laureano Ruiz Pérez for its Web Portfolio
+ */
+<style>
+    /* Class not used, is bugged, I used navbar_tab instead
+    .main_title {
+        font-size: 3rem;
+        font-family: "Roboto Condensed";
+    }
+    */
+
+    .navbar_tab {
+        font-size: 1.2rem;
+        font-family: "Roboto Condensed";
+    }
+    
+    .titles{
+            font-family: "Roboto Mono";
+            font-size: 25px;
+        }
+
+    #contact {
+            padding: 0rem;
+        }
+
+    #social {
+            display: flex;
+            justify-content: space-around;
+            padding: 0.2rem 14rem;
+        }
+
+    #copy {
+            padding: 1.4rem;
+        }
+    @media only screen and (max-device-width: 720px) {
+        .container {
+            width: 50%;
+        }
+        #social {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem 0rem;
+            }
+        }
+
+</style>

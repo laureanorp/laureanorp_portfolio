@@ -1,159 +1,83 @@
 <!DOCTYPE html>
 <html>
+    
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <meta name="theme-color" content="#212121">
+    <!--Web title-->
     <title>Laureano Ruiz</title>
-
-    <!-- CSS  -->
-    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
-    <link href="min/custom-min.css" type="text/css" rel="stylesheet" >
-     <!-- Fonts  -->
+    
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="/favicon-highres.png" sizes="192x192">
+    
+    <!--Chrome custom actionbar color-->
+    <meta name="theme-color" content="#212121">
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!--Import fonts and MD icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/png" href="/favicon-highres.png" sizes="192x192">
-    <!-- Custom CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
+    
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection">
+    
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/custom.css">
+    
     <style>
-        footer.page-footer .footer-copyright {
-            height: unset;
-            line-height: 20px;
-            padding-bottom: 1.5rem;
-        }
-        #contact {
-            padding: 0rem;
-        }
-        #social {
-            display: flex;
-            justify-content: space-around;
-            padding: 0.2rem 14rem;
-        }
-        .hide-pc {display:none;
-        }
-        @media only screen and (max-device-width: 720px) {
-		#social {
-            display: flex;
-            justify-content: space-around;
-            padding: 1rem 0rem;
-        }
-        .container {
-            width: 20%;
-            margin: 0 auto;
-        }
-        .hide-pc {display:block;
-        }
-        }
         
-        #copy {
-            padding: 1.4rem;
-        }
-        .titles{
-            font-family: "Roboto Mono";
-            font-size: 25px;
-        }
-        .nav-categories{
-            font-family: "Roboto Mono";
-            font-size: 1.15rem;
-        }
-        .phones{
-            font-family: "Roboto Mono";
-            font-size: 16px;
-        }
-        .container {
-            margin: 0 auto;
-            max-width: 1280px;
-            width: 75%;
-        }
-        .nav-wrapper {
-           font-family: "Roboto Mono";
-        }
-        .logo {
-            font-size: 1.5rem;
-        }
     </style>
+   
+    
 </head>
     
     
-<body id="top" class="scrollspy">
-
-<!--Pre Loader-->
-<div id="loader-wrapper">
-    <div id="loader"></div>
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-</div>
+<body>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     
-
-<!--Navigation-->
-    
- <div class="nav-wrapper">
-    <nav class="white" role="navigation">
+    <!--Navigation-->
+    <nav class="white">
         <div class="container">
-            <div class="nav-wrapper"><a id="logo-container" href="#top" class="logo grey-text text-darken-4">Laureano Ruiz</a>
-            <ul id="nav-mobile" class="right side-nav">
-                <li><a class="nav-categories grey-text text-darken-4" href="#curriculum">Curriculum</a></li>
-                <li><a class="nav-categories grey-text text-darken-4" href="#designs">Designs</a></li>
-                <li><a class="nav-categories grey-text text-darken-4" href="#contact">Contact</a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="mdi mdi-web grey-text text-darken-4"></i></a></li>
-                <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="#">English</a></li>
-                    <li><a href="http://laureanoruiz.com/es/">Spanish</a></li>
+            <div class="nav-wrapper">
+                <a class="navbar_tab grey-text text-darken-4" href="#">Laureano Ruiz</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="navbar_tab grey-text text-darken-4" href=#curriculum>Curriculum</a></li>
+                    <li><a class="navbar_tab grey-text text-darken-4" href=#designs>Diseños</a></li>
+                    <li><a class="navbar_tab grey-text text-darken-4" href=#contact>Contacto</a></li>
+                    <li><a class="dropdown-button" data-beloworigin="true" href="#" data-activates="dropdown1"><i class="mdi mdi-web grey-text text-darken-4"></i></a></li>
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Español</a></li>
+                    </ul>
                 </ul>
-            </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi mdi-menu mdi-24px grey-text text-darken-4" style="margin: 0rem 1rem"></i></a>
             </div>
         </div>
     </nav>
-</div>
-
     
-<!-- class="nav-wrapper">
-    <nav class="white" role="navigation">
+    <!--Intro-->
+    <div class="section scrollspy">
         <div class="container">
-            <div class="nav-wrapper"><a id="logo-container" href="#top" class="logo grey-text text-darken-4">Laureano Ruiz</a>
-            <ul id="nav-mobile" class="right side-nav">
-                <li><a class="nav-categories grey-text text-darken-4" href="#curriculum">Curriculum</a></li>
-                <li><a class="nav-categories grey-text text-darken-4" href="#designs">Designs</a></li>
-                <li><a class="nav-categories grey-text text-darken-4" href="#contact">Contact</a></li>
-                <li><a class="hide-pc dropdown-button" href="#!" data-activates="dropdown"><i class="mdi mdi-pencil grey-text text-darken-4"></i></a></li>
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="mdi mdi-web grey-text text-darken-4"></i></a></li>
-                <ul id="dropdown1" class="dropdown-content">
-                    <li><a href="#">English</a></li>
-                    <li><a href="http://laureanoruiz.com/es/">Spanish</a></li>
-                </ul>
-            </ul>
-            <a href="#" data-activates="dropdown2" class="button-collapse"><i class="mdi mdi-menu grey-text text-darken-4"></i></a>
-            <ul id="dropdown2" class="dropdown-content">
-                 <li><a href="#">1</a></li>
-                 <li><a href="#">2</a></li>
-            </ul>
-            </div>
-        </div>
-    </nav>
-</div>-->
-
-<!--Intro-->
-<div class="section scrollspy">
-    <div class="container">
-        <center><img style="margin: 2rem" src="img/myself.png"  height="200" width="200"></center>
-        <div class="row">
-            <div class="col s12 m4 l4">
-                <div class="center promo promo-example">
+            <h3 class="center">[WEB UNDER CONSTRUCTION]</h3>
+            <center><img style="margin: 2rem" src="img/myself.png"  height="200" width="200"></center>
+            <div class="row">
+                <div class="center col s12 m4 l4 xl4">
                     <i class="mdi mdi-dna teal-text text-accent-3" style="font-size: 4.5rem"></i>
                     <h5 class="titles">Biología</h5>
                     <p align="center">Desde los más básicos aminoácidos hasta la edafología. Estudio la bella ciencia de la vida.</p>
                 </div>
-            </div>
-            <div  class="col s12 m4 l4">
-                <div class="center promo promo-example">
+                <div class="center col s12 m4 l4 xl4">
                     <i class="mdi mdi-pencil amber-text" style="font-size: 4.5rem"></i>
                     <h5 class="titles">Diseño</h5>
                     <p align="center">Vectorización, Material Design, Flat design, iconos, logos... Mi herramienta más preciada.</p>
                 </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="center promo promo-example">
+                <div class="center col s12 m4 l4 xl4">
                     <i class="mdi mdi-fire red-text" style="font-size: 4.5rem"></i>
                     <h5 class="titles">Motivación</h5>
                     <p align="center">Es un hecho que cuando me planteo conseguir algo, trabajo tan duro como haga falta.</p>
@@ -161,252 +85,231 @@
             </div>
         </div>
     </div>
-</div>
     
-<div class="divider"></div>    
+    <!--Divider-->
+    <div class="divider"></div>  
     
-<!--Curriculum-->
-<div class="section scrollspy" id="curriculum">
-    <div class="container" align="justify"> 
-        <h3>Curriculum Vitae</h3>
-        <h5 class="titles">Actividad actual</h5>
-        <p>
-        Cursando 3º de Grado en Biología en la Universidad de La Laguna, Tenerife. Diseño gráfico de iconos, logos e interfaces como hobby.
-        </p>
-        <h5 class="titles">Estudios</h5>
-        <p>
-        Bachillerato en IES Valle de Guerra (2013 - 2015)</p><p>Grado en Biología en la universidad de La Laguna (2015 - Presente)</p>
-        <h5 class="titles">Habilidades</h5>
-        <p>
-        Esquemático, perfeccionista, con gusto por aprender y proactivo. Buena habilidad de orientación con programas y sistemas operativos nuevos.
-        </p>
-        <b>Conocimientos de programación</b> básicos en Python, HTML/CSS y Google App Inventor (lenguaje gráfico para aplicaciones Android). Certificado Computer Science 101 en Stanford Online (Accomplishment 86%).
-        <p>
-        Usuario de sistemas operativos de escritorio: Mac OS X (de Leopard a Sierra), Windows (de 7 a 10).
-        Experiencia alta en sistema operativo Android como usuario: desde 2.2 Froyo hasta 7.1.1 Nougat, bien informado de la lista de cambios de cada versión. Al día del ecosistema y de la mayoría de servicios de Google.
-        </p>
-        <p>
-        <b>Software de oficina:</b> Procesadores de texto, hojas de cálculo, y presentaciones. 
-        </p>
-        <p>
-        <b>Software de diseño gráfico:</b> Nivel alto en Adobe Illustrator y conocimientos más limitados de Photoshop. Portfolio de diseño: www.laureanoruiz.com
-        </p>
-        <h5 class="titles">Idiomas</h5>
-        <p>
-        Español nativo.
-        Inglés de nivel B1 (Trinity College London).
-        </p>
-        <h5 class="titles">Otras actividades</h5>
-        <p>
-        Práctica de deportes: Cinturón negro de kárate (primer dan), Ultimate Frisbee y bicicleta.
-        Título de Árbitro Regional de Kárate.
-        </p>    
-    </div>  
-</div>
-  
-<div class="divider"></div> 
-
-<!--Desgings-->
-<div class="section scrollspy" id="designs">
-    <div class="container">
-        <h3>Designs</h3>
-        <div class="row">
-            <!--SIRU-->
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/Siru.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Siru Icon Pack</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Siru Icon Pack<i class="mdi mdi-close right"></i></span>
-                        <p>Siru is an icon pack for Android developed by Javi Toro and me, based on Material Design guidelines.</p>
-                        <p align="right"><a href="https://play.google.com/store/apps/details?id=com.dotsillustration.siru">Google Play Page</a></p>
-                    </div>
-                </div>
-            </div>
-            <!--VECTORS-->
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/PradaVector.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Vectors</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Vectors portraits<i class="mdi mdi-close right"></i></span>
-                        <p>Vector portraits I make for people, animals or things.</p>
-                        <p align="right"><a href="https://plus.google.com/collection/YE4I2">View all</a></p>
+    <!--Curriculum-->
+    <div class="section scrollspy" id="curriculum">
+        <div class="container" align="justify"> 
+                <h3>Curriculum Vitae</h3>
+                <a><i class="material-icons left">timeline</i>ACTIVIDAD ACTUAL</a>
+                <p>
+                Cursando 3º de Grado en Biología en la Universidad de La Laguna, Tenerife. Diseño gráfico de iconos, logos e interfaces como hobby.
+                </p>
+                <a><i class="material-icons left">school</i>ESTUDIOS</a>
+                <p>
+                Bachillerato en IES Valle de Guerra (2013 - 2015)</p><p>Grado en Biología en la universidad de La Laguna (2015 - Presente)</p>
+                <a><i class="material-icons left">star</i>HABILIDADES</a>
+                <p>
+                Esquemático, perfeccionista y con gusto por aprender. Buena habilidad de orientación con programas y sistemas operativos nuevos.
+                </p>
+                <b>Conocimientos de programación</b> básicos en Python, HTML/CSS y Google App Inventor (lenguaje gráfico para aplicaciones Android). Certificado Computer Science 101 en Stanford Online (Accomplishment 86%).
+                <p>
+                Usuario de sistemas operativos de escritorio: Mac OS X (de Leopard a Sierra), Windows (de 7 a 10).
+                Experiencia alta en sistema operativo Android como usuario: desde 2.2 Froyo hasta 7.1.1 Nougat, bien informado de la lista de cambios de cada versión. Al día del ecosistema y de la mayoría de servicios de Google.
+                </p>
+                <p>
+                <b>Software de oficina:</b> Procesadores de texto, hojas de cálculo, y presentaciones. 
+                </p>
+                <p>
+                <b>Software de diseño gráfico:</b> Nivel alto en Adobe Illustrator y conocimientos más limitados de Photoshop.
+                </p>
+                <a><i class="material-icons left">public</i>IDIOMAS</a>
+                <p>
+                Español a nivel de lengua materna.
+                Inglés a nivel B1 (Trinity College London).
+                </p>
+                <a><i class="material-icons left">directions_bike</i>OTRAS ACTIVIDADES</a>
+                <p>
+                Práctica de deportes: Cinturón negro de kárate (primer dan), Ultimate Frisbee y bicicleta.
+                Título de Árbitro Regional de Kárate.
+                </p> 
+        </div> 
+    </div>
+        
+    <!--Divider-->
+    <div class="divider"></div>
+        
+    <!--Desgings-->
+    <div class="section scrollspy" id="designs">
+        <div class="container">
+            <h3>Diseños</h3>
+            <div class="row">
+                <!--SIRU-->
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/Siru.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Siru Icon Pack<i class="material-icons right">open_in_new</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Siru Icon Pack<i class="mdi mdi-close right"></i></span>
+                            <p>Siru is an icon pack for Android developed by Javi Toro and me, based on Material Design guidelines.</p>
+                            <p align="right"><a href="https://play.google.com/store/apps/details?id=com.dotsillustration.siru">Google Play Page</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--TRAIN TICKETS-->
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/train_tickets.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Train Tickets</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Train Tickets art cover<i class="mdi mdi-close right"></i></span>
-                        <p>Album art made for my father and his good friend Tony Peña. Both are excelent musicians.</p>
-                        <p align="right"><a href="https://archive.org/details/Petroglyph503TonyPea-TrainTickets">Hear the album</a></p>
-                    </div>
-                </div>
-            </div>
-             <!--TRAIN TALKS-->
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/train_talks.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Train Talks</span>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Train Talks art cover<i class="mdi mdi-close right"></i></span>
-                        <p>Album art made for my father and his good friend Tony Peña. Both are excelent musicians.</p>
-                        <p align="right"><a href="https://archive.org/details/5TreatWithRespect_201702/1-Listen.wav">Hear the album</a></p>
+                <!--VECTORS-->
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/PradaVector.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Vectors</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Vectors portraits<i class="mdi mdi-close right"></i></span>
+                            <p>Vector portraits I make for people, animals or things.</p>
+                            <p align="right"><a href="https://plus.google.com/collection/YE4I2">View all</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--SPOTIFY PLAYLIST COVERS-->
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/playlists_covers.jpg">
+                <!--TRAIN TICKETS-->
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/train_tickets.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Train Tickets</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Train Tickets art cover<i class="mdi mdi-close right"></i></span>
+                            <p>Album art made for my father and his good friend Tony Peña. Both are excelent musicians.</p>
+                            <p align="right"><a href="https://archive.org/details/Petroglyph503TonyPea-TrainTickets">Hear the album</a></p>
+                        </div>
                     </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Playlists covers</span>
+                </div>
+                 <!--TRAIN TALKS-->
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/train_talks.png">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Train Talks</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Train Talks art cover<i class="mdi mdi-close right"></i></span>
+                            <p>Album art made for my father and his good friend Tony Peña. Both are excelent musicians.</p>
+                            <p align="right"><a href="https://archive.org/details/5TreatWithRespect_201702/1-Listen.wav">Hear the album</a></p>
+                        </div>
                     </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Playlists covers<i class="mdi mdi-close right"></i></span>
-                        <p>Just some covers for my Spotify playlists I made for fun.</p>
-                        <p align="right"><a href="https://plus.google.com/+LaureanoRuizP%C3%A9rez/posts/NvJfTHqBYvA">Google+ Post</a></p>
+                </div>
+                <!--SPOTIFY PLAYLIST COVERS-->
+                <div class="col s12 m4 l4">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="img/playlists_covers.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Playlists covers</span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Playlists covers<i class="mdi mdi-close right"></i></span>
+                            <p>Just some covers for my Spotify playlists I made for fun.</p>
+                            <p align="right"><a href="https://plus.google.com/+LaureanoRuizP%C3%A9rez/posts/NvJfTHqBYvA">Google+ Post</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<!--Footer-->
-<footer id="contact" class="page-footer grey darken-4 scrollspy">
+        
+    <!--Footer-->
+    <footer id="contact" class="page-footer grey darken-4 scrollspy">
         <div class="col s10 teal accent-3" id="social">
-                <a class="white-text" href="https://plus.google.com/+LaureanoRuizPérez">
-                    <i class="mdi mdi-google-plus mdi-36px grey-text text-darken-4"></i>
-                </a>
-                <a class="white-text" href="https://twitter.com/laureanorp">
-                    <i class="mdi mdi-twitter mdi-36px grey-text text-darken-4"></i>
-                </a>
+            <a class="white-text" href="https://plus.google.com/+LaureanoRuizPérez">
+                <i class="mdi mdi-google-plus mdi-36px grey-text text-darken-4"></i>
+            </a>
+            <a class="white-text" href="https://twitter.com/laureanorp">
+                <i class="mdi mdi-twitter mdi-36px grey-text text-darken-4"></i>
+            </a>
 
-                <!-- Email Modal Trigger -->
-                <i class="mdi mdi-email mdi-36px grey-text text-darken-4 modal-trigger" href="#modal1"></i>
-            
-                <!-- Modal Structure -->
-                <div id="modal1" class="modal bottom-sheet grey lighten-5">
-                <div class="modal-content">
-                  <h5 class="grey-text text-darken-3">Contactar por correo</h5>
-                        <form class="col s10" id="mail_form" align="center" action="https://formspree.io/laureano.ruiz.perez@gmail.com" method="POST">
-                            <div class="row">
-                                <div class="input-field col s6 ">
-                                    <i class="mdi mdi-account-circle prefix grey-text text-darken-3"></i>
-                                    <input type="text" name="name" id="name">
-                                    <label for="name" class="grey-text text-darken-3">Tu nombre</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <i class="mdi mdi-email prefix grey-text text-darken-3"></i>
-                                    <input type="email" name="_replyto" id="email">
-                                    <label for="email" class="grey-text text-darken-3">Tu email</label>
-                                </div>
-                            </div>
-                                <div class="input-field col s12">
-                                    <i class="mdi mdi-pencil prefix grey-text text-darken-3"></i>
-                                    <textarea id="message" name="message" class="materialize-textarea grey-text text-darken-3"></textarea>
-                                    <label for="message" class="grey-text text-darken-3">Mensaje</label>
-                                </div>
-                                <div align="right">
-                                    <button class="btn waves-effect waves-light teal accent-3" type="submit">Enviar <i class="mdi mdi-send right white-text"></i>
-                                    </button>
-                                </div>
-                        </form>
-                </div>
-                </div>
-               
-                <!-- Phone Modal Trigger -->
-                <i class="mdi mdi-phone mdi-36px grey-text text-darken-4 modal-trigger" href="#modal2"></i>
-            
-                <!-- Phone modal Structure -->
-                <div id="modal2" class="modal bottom-sheet grey lighten-5">
-                <div class="modal-content">
-                  <h5 class="grey-text text-darken-3">Contactar por teléfono</h5>
-                    <p class="phones">Móvil: +34 628 38 89 09</p>
-                    <p class="phones">Fijo: 922 54 68 18</p>
-                </div>
-                </div>
+            <!-- Email Modal Trigger -->
+            <i class="mdi mdi-email mdi-36px grey-text text-darken-4 modal-trigger" data-target="modal1"></i>
 
-                <a class="white-text" href="https://www.instagram.com/laureano.svg/">
-                    <i class="mdi mdi-instagram mdi-36px grey-text text-darken-4"></i>
-                </a>
-                <a class="white-text" href="https://www.linkedin.com/in/laureano-ruiz-p%C3%A9rez-09b6a7108/">
-                     <i class="mdi mdi-linkedin mdi-36px grey-text text-darken-4"></i>
-                </a>
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal bottom-sheet grey lighten-5">
+            <div class="modal-content">
+                <h5 class="grey-text text-darken-3">Contactar por correo</h5>
+                <form class="col s10" id="mail_form" align="center" action="https://formspree.io/laureano.ruiz.perez@gmail.com" method="POST">
+                    <div class="row">
+                        <div class="input-field col s6 ">
+                            <i class="mdi mdi-account-circle prefix grey-text text-darken-3"></i>
+                            <input type="text" name="name" id="name">
+                            <label for="name" class="grey-text text-darken-3">Tu nombre</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="mdi mdi-email prefix grey-text text-darken-3"></i>
+                            <input type="email" name="_replyto" id="email">
+                            <label for="email" class="grey-text text-darken-3">Tu email</label>
+                        </div>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="mdi mdi-pencil prefix grey-text text-darken-3"></i>
+                        <textarea id="message" name="message" class="materialize-textarea grey-text text-darken-3"></textarea>
+                        <label for="message" class="grey-text text-darken-3">Mensaje</label>
+                    </div>
+                    <div align="right">
+                        <button class="btn waves-effect waves-light teal accent-3" type="submit">Enviar <i class="mdi mdi-send right white-text"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            </div>
+
+            <!-- Phone Modal Trigger -->
+            <i class="mdi mdi-phone mdi-36px grey-text text-darken-4 modal-trigger" data-target="modal2"></i>
+
+            <!-- Phone modal Structure -->
+            <div id="modal2" class="modal bottom-sheet grey lighten-5">
+            <div class="modal-content">
+              <h5 class="grey-text text-darken-3">Contactar por teléfono</h5>
+                <p class="phones">Móvil: +34 628 38 89 09</p>
+                <p class="phones">Fijo: 922 54 68 18</p>
+            </div>
+            </div>
+
+            <a class="white-text" href="https://www.instagram.com/laureano.svg/">
+                <i class="mdi mdi-instagram mdi-36px grey-text text-darken-4"></i>
+            </a>
+            <a class="white-text" href="https://www.linkedin.com/in/laureano-ruiz-p%C3%A9rez-09b6a7108/">
+                 <i class="mdi mdi-linkedin mdi-36px grey-text text-darken-4"></i>
+            </a>
         </div>
+        
+        <div class="col s10 grey darken-4" id="copy">
+            <div align="center" class="grey-text text-darken-3">
+               Esta web ha sido creada por Laureano Ruiz usando <a class="grey-text text-darken-2" href="http://materializecss.com/">MaterializeCSS</a>.
+            </div>
+        </div>           
+    </footer>
+        
+    <script>
+        //ScrollSpy
+        $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+        });
+         //Modals
+         $(document).ready(function(){
+            $('.modal').modal();
+        });
+    </script>
     
-    <div class="col s10 grey darken-4" id="copy">
-        <div align="center" class="grey-text text-darken-3">
-            Esta web ha sido creada por Laureano Ruiz usando <a class="grey-text text-darken-2" href="http://materializecss.com/">MaterializeCSS</a>.
-        </div>
-    </div>           
-</footer>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-67484305-1', 'auto');
+        ga('send', 'pageview');
+    </script>
     
-<!--Scripts-->
-<script src="min/plugin-min.js"></script>
-<script src="min/custom-min.js"></script>
-<script>
-    //ScrollSpy
-    $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-    });
-     //Modals
-     $(document).ready(function(){
-     $('.modal-trigger').leanModal();
-     });
-    //Language Dropdown
-    $('.dropdown-button').dropdown({
-        inDuration: 300,
-        outDuration: 225,
-        constrainWidth: false, // Does not change width of dropdown to that of the activator
-        hover: false, // Activate on hover
-        gutter: 0, // Spacing from edge
-        belowOrigin: false, // Displays dropdown below the button
-        alignment: 'left', // Displays dropdown with edge aligned to the left of button
-        stopPropagation: false // Stops event propagation
-        }
-        );
-    // Initialize collapse button
-    $('.button-collapse').sideNav({
-      menuWidth: 300, // Default is 300
-      edge: 'left', // Choose the horizontal origin
-      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      draggable: false // Choose whether you can drag to open on touch screens
-    }
-  );
-</script> 
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-67484305-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
 </body>
+    
 </html>
