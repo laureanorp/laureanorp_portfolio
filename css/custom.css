@@ -27,7 +27,7 @@
         }
     @media only screen and (max-device-width: 720px) {
         .container {
-            width: 50%;
+            width: 75%;
         }
         #social {
             display: flex;
