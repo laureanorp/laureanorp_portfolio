@@ -1,23 +1,16 @@
 /*!
  *Code by Laureano Ruiz Pérez for its Web Portfolio
  */
-<style>
-    /* Class not used, is bugged, I used navbar_tab instead
-    .main_title {
-        font-size: 3rem;
-        font-family: "Roboto Condensed";
-    }
-    */
 
-    .navbar_tab {
-        font-size: 1.2rem;
-        font-family: "Roboto Condensed";
-    }
-    
     .titles{
             font-family: "Roboto Mono";
             font-size: 25px;
         }
+
+    .navbar_categories {
+            font-family: "Roboto Condensed";
+            font-size: 1.2rem;
+    }
 
     #contact {
             padding: 0rem;
@@ -42,5 +35,3 @@
             padding: 1rem 0rem;
             }
         }
-
-</style>
