@@ -1,29 +1,40 @@
 /*!
  *Code by Laureano Ruiz Pérez for its Web Portfolio
  */
+    .card {
+        border-radius: 6px;
+    }
+    
+    .card .card-image {
+        border-radius: 6px 6px 0 0;
+    }
+
+    .modal.bottom-sheet {
+        max-height: 75%;
+    }
 
     .titles{
-            font-family: "Roboto Condensed";
-            font-size: 25px;
+        font-family: "Roboto Condensed";
+        font-size: 25px;
         }
 
     .navbar_categories {
-            font-family: "Roboto Condensed";
-            font-size: 1.2rem;
+        font-family: "Roboto Condensed";
+        font-size: 1.2rem;
     }
 
     #contact {
-            padding: 0rem;
-        }
+        padding: 0rem;
+    }
 
     #social {
-            display: flex;
-            justify-content: space-around;
-            padding: 0.2rem 14rem;
-        }
+        display: flex;
+        justify-content: space-around;
+        padding: 0.2rem 14rem;
+    }
 
     #copy {
-            padding: 1.4rem;
+        padding: 1.4rem;
         }
     @media only screen and (max-device-width: 720px) {
         .container {
