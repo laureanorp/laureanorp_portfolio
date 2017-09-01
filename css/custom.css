@@ -5,6 +5,16 @@
         border-radius: 6px;
     }
     
+    .card .card-title {
+        font-size: 22px;
+        font-weight: 350;
+    }
+
+    .card .card-reveal .card-title {
+        font-size: 22px;
+        font-weight: 350;
+    }
+
     .card .card-image {
         border-radius: 6px 6px 0 0;
     }
