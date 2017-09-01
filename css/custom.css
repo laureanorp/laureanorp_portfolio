@@ -1,58 +1,68 @@
 /*!
  *Code by Laureano Ruiz Pérez for its Web Portfolio
  */
-    .card {
-        border-radius: 6px;
-    }
-    
-    .card .card-title {
-        font-size: 22px;
-        font-weight: 350;
+   
+nav {
+    position:relative;
+    z-index: 999;
+}
+
+nav ul li:hover {
+   background-color: #424242;
+}
+
+.card {
+    border-radius: 6px;
+}
+
+.card .card-title {
+    font-size: 22px;
+    font-weight: 350;
+}
+
+.card .card-reveal .card-title {
+    font-size: 22px;
+    font-weight: 350;
+}
+
+.card .card-image {
+    border-radius: 6px 6px 0 0;
+}
+
+.modal.bottom-sheet {
+    max-height: 75%;
+}
+
+.titles{
+    font-family: "Roboto Condensed";
+    font-size: 25px;
     }
 
-    .card .card-reveal .card-title {
-        font-size: 22px;
-        font-weight: 350;
+.navbar_categories {
+    font-family: "Roboto Condensed";
+    font-size: 1.2rem;
+}
+
+#contact {
+    padding: 0rem;
+}
+
+#social {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.2rem 14rem;
+}
+
+#copy {
+    padding: 1.4rem;
     }
-
-    .card .card-image {
-        border-radius: 6px 6px 0 0;
+@media only screen and (max-device-width: 720px) {
+    .container {
+        width: 75%;
     }
-
-    .modal.bottom-sheet {
-        max-height: 75%;
-    }
-
-    .titles{
-        font-family: "Roboto Condensed";
-        font-size: 25px;
-        }
-
-    .navbar_categories {
-        font-family: "Roboto Condensed";
-        font-size: 1.2rem;
-    }
-
-    #contact {
-        padding: 0rem;
-    }
-
     #social {
         display: flex;
         justify-content: space-around;
-        padding: 0.2rem 14rem;
+        padding: 1rem 0rem;
+        }
     }
-
-    #copy {
-        padding: 1.4rem;
-        }
-    @media only screen and (max-device-width: 720px) {
-        .container {
-            width: 75%;
-        }
-        #social {
-            display: flex;
-            justify-content: space-around;
-            padding: 1rem 0rem;
-            }
-        }
