@@ -12,13 +12,15 @@ nav ul li:hover {
 }
 
 .card {
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 .card .card-title {
+    font-family: "Roboto Mono";
     font-size: 22px;
     font-weight: 350;
 }
+
 
 .card .card-reveal .card-title {
     font-size: 22px;
@@ -26,7 +28,7 @@ nav ul li:hover {
 }
 
 .card .card-image {
-    border-radius: 6px 6px 0 0;
+    border-radius: 8px 8px 0 0;
 }
 
 .modal.bottom-sheet {
@@ -34,17 +36,27 @@ nav ul li:hover {
 }
 
 .titles{
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Mono";
     font-size: 25px;
     }
 
 .navbar_categories {
-    font-family: "Roboto Condensed";
+    font-family: "Roboto Mono";
     font-size: 1.2rem;
 }
 
 #contact {
     padding: 0rem;
+}
+
+.input-field input[type=text]:focus {
+     border-bottom: 1px solid #f50057;
+     box-shadow: 0 1px 0 0 #f50057;
+}
+
+.input-field input[type=email]:focus {
+     border-bottom: 1px solid #f50057;
+     box-shadow: 0 1px 0 0 #f50057;
 }
 
 #social {
