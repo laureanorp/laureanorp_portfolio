@@ -35,6 +35,11 @@ nav ul li:hover {
     font-size: 25px;
     }
 
+.navbar_title {
+    font-family: "Roboto Mono";
+    font-size: 1.2rem;
+}
+
 .navbar_categories {
     font-family: "Roboto Mono";
     font-size: 1.2rem;
@@ -67,6 +72,11 @@ nav ul li:hover {
     .container {
         width: 75%;
     }
+
+    .navbar_categories {
+        display: none;
+    }
+    
     #social {
         display: flex;
         justify-content: space-around;
