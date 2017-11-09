@@ -54,6 +54,15 @@ nav ul li:hover {
      box-shadow: 0 1px 0 0 #f50057;
 }
 
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #f50057;
+  box-shadow: 0 1px 0 0 #f50057;
+}
+
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #f50057;
+}
+
 #social {
     display: flex;
     justify-content: space-around;
