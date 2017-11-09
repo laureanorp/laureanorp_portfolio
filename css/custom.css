@@ -21,13 +21,8 @@ nav ul li:hover {
     font-weight: 350;
 }
 
-
 .card .card-image {
     border-radius: 8px 8px 0px 0px;
-}
-
-.modal.bottom-sheet {
-    max-height: 75%;
 }
 
 .titles{
@@ -49,11 +44,11 @@ nav ul li:hover {
     padding: 0rem;
 }
 
+/* Colors of the input lines on the email form */
 .input-field input[type=text]:focus {
      border-bottom: 1px solid #f50057;
      box-shadow: 0 1px 0 0 #f50057;
 }
-
 .input-field input[type=email]:focus {
      border-bottom: 1px solid #f50057;
      box-shadow: 0 1px 0 0 #f50057;
@@ -68,13 +63,21 @@ nav ul li:hover {
 #copy {
     padding: 1.4rem;
     }
+
+.modal.bottom-sheet {
+    max-height: 75%;
+}
+
+/* Trying to copy the hide-on-med-and-down class of MaterializeCSS */
+@media only screen and (max-width: 992px) {
+  .navbar_categories {
+    display: none !important;
+  }
+}
+
 @media only screen and (max-device-width: 720px) {
     .container {
         width: 75%;
-    }
-
-    .navbar_categories {
-        display: none;
     }
     
     #social {
