@@ -287,26 +287,21 @@
         //ScrollFire to know when you get to the "contact" section
          var options = [
               {selector: '#contact', offset: 0, callback: function(el) {
-                  //Materialize.toast("Contact me!", 1500 );
+                setTimeout(function() {
+                    // start pulse
+                    socialBarEl.addClass('pulse');
+                setTimeout(function() {
+                    // stop pulse
+                    socialBarEl.removeClass('pulse');
+                }, 3000);
+
+                }, 250);
               } },
             ];
         Materialize.scrollFire(options);
 
         var socialBarEl = $('#social');  
 
-        $('.navbar_categories[href="#contact"]').on('click', function() {
-            // wait for scroll (such an ugly way, though)
-            setTimeout(function() {
-                // start pulse
-                socialBarEl.addClass('pulse');
-
-                setTimeout(function() {
-                    // stop pulse
-                    socialBarEl.removeClass('pulse');
-                }, 3000);
-
-            }, 250);
-        });
     </script>
     
     <script>
