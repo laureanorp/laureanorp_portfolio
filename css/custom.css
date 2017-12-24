@@ -60,17 +60,17 @@ nav ul li:hover {
 
 /* Colors of the input lines on the email form */
 .input-field input[type=text]:focus {
-     border-bottom: 1px solid #f50057;
-     box-shadow: 0 1px 0 0 #f50057;
+     border-bottom: 1px solid #E32D55;
+     box-shadow: 0 1px 0 0 #E32D55;
 }
 .input-field input[type=email]:focus {
-     border-bottom: 1px solid #f50057;
-     box-shadow: 0 1px 0 0 #f50057;
+     border-bottom: 1px solid #E32D55;
+     box-shadow: 0 1px 0 0 #E32D55;
 }
 
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #f50057;
-  box-shadow: 0 1px 0 0 #f50057;
+  border-bottom: 1px solid #E32D55;
+  box-shadow: 0 1px 0 0 #E32D55;
 }
 
 textarea.materialize-textarea:focus:not([readonly]) + label {
@@ -91,6 +91,14 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     max-height: 75%;
 }
 
+.oospink {
+  background-color: #E32D55 !important;
+}
+
+.oospink-text {
+  color: #E32D55 !important;
+}
+
 /* Trying to copy the hide-on-med-and-down class of MaterializeCSS */
 @media only screen and (max-width: 992px) {
   .navbar_categories {
@@ -100,7 +108,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 @media only screen and (max-device-width: 720px) {
     .container {
-        width: 75%;
+        width: 80%;
     }
     
     #social {
