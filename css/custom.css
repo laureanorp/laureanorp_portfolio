@@ -2,7 +2,8 @@
  *Code by Laureano Ruiz Pérez for its Web Portfolio
  */
 
-body { overflow-x: hidden;}
+body {overflow-x: hidden;
+    }
 
 nav {
     position:relative;
@@ -39,11 +40,6 @@ nav ul li:hover {
     border-radius: 8px 8px 0px 0px;
 }
 
-.titles{
-    font-family: "Roboto Mono";
-    font-size: 25px;
-    }
-
 .navbar_title {
     font-family: "Roboto Mono";
     font-size: 1.2rem;
@@ -53,6 +49,15 @@ nav ul li:hover {
     font-family: "Roboto Mono";
     font-size: 1.2rem;
 }
+
+.hero_titles{
+    font-family: "Roboto Mono";
+    font-size: 25px;
+    }
+
+.cv_titles{
+    font-weight: bold;
+    }
 
 #contact {
     padding: 0rem;
