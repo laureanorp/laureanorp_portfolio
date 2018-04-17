@@ -40,6 +40,18 @@ nav ul li:hover {
     border-radius: 8px 8px 0px 0px;
 }
 
+.card .card-image-photo img {
+    border-radius: 8px 8px 8px 8px;
+    display:block;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 .navbar_title {
     font-family: "Roboto Mono";
     font-size: 1.2rem;
