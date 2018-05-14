@@ -15,6 +15,9 @@ nav ul li:hover {
 
 .card {
     border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #CFCFCF;
 }
 
 .card-content {
@@ -22,7 +25,7 @@ nav ul li:hover {
 }
 
 .card-content .card-title {
-    font-family: "Roboto Mono";
+    font-family: "Product Sans";
     font-size: 20px;
     font-weight: 350;
     width: 90%;
@@ -55,12 +58,12 @@ nav ul li:hover {
 }
 
 .hero_titles{
-    font-family: "Roboto Mono";
+    font-family: "Product Sans";
     font-size: 25px;
     }
 
 .cv_titles{
-    font-weight: bold;
+    font-family: "Product Sans";
     }
 
 #contact {
@@ -116,8 +119,10 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 }
 
 @font-face {
-    font-family: "googlesans_regular";
-    src: url();
+  font-family: 'Product Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
 @media only screen and (max-device-width: 720px) {
