@@ -1,7 +1,6 @@
 /*!
  *Code by Laureano Ruiz Pérez for its Web Portfolio
  */
-
 body {overflow-x: hidden;
     }
 
@@ -114,6 +113,11 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   .navbar_categories {
     display: none !important;
   }
+}
+
+@font-face {
+    font-family: "googlesans_regular";
+    src: url();
 }
 
 @media only screen and (max-device-width: 720px) {
