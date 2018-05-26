@@ -13,6 +13,18 @@ nav ul li:hover {
    background-color: #424242;
 }
 
+.big_icon {
+    font-size: 4.5rem;
+}
+
+.card .card-content .above_image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+}
+
 .card {
     border-radius: 8px;
     border-style: solid;
@@ -45,6 +57,10 @@ nav ul li:hover {
 .card .card-image-photo img {
     border-radius: 8px;
     width: 100%;
+}
+
+.no_border {
+     border-width: 0px;
 }
 
 .navbar_title {
@@ -109,6 +125,12 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 .oospink-text {
   color: #E32D55 !important;
+}
+
+.btn_with_border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #CFCFCF;
 }
 
 .btn, .btn-large,
