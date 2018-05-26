@@ -111,6 +111,13 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   color: #E32D55 !important;
 }
 
+.btn, .btn-large,
+.btn-flat {
+    border-radius: 4px;
+    text-transform: none;
+    font-family: "Product sans";
+}
+
 /* Trying to copy the hide-on-med-and-down class of MaterializeCSS */
 @media only screen and (max-width: 992px) {
   .navbar_categories {
