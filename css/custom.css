@@ -17,7 +17,15 @@ nav ul li:hover {
     font-size: 4.5rem;
 }
 
-.card .card-content .above_image {
+.card .card-content.above_image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+}
+
+ .above_image {
     position: absolute;
     bottom: 0;
     width: 100%;
