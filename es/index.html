@@ -37,13 +37,13 @@
     <nav class="grey darken-4 z-depth-2">
         <div class="container">
             <div class="nav-wrapper">
-                <a class="navbar_title grey-text text-lighten-3" href="#">LAUREANO RUIZ</a>
+                <a class="navbar_title grey-text text-lighten-3">LAUREANO RUIZ</a>
                 <ul class="right">
                     <li><a class="navbar_categories grey-text text-lighten-3" href="#curriculum">CURRICULUM</a></li>
                     <li><a class="navbar_categories grey-text text-lighten-3" href="#design">DISEÑO</a></li>
                     <li><a class="navbar_categories grey-text text-lighten-3" href="#photography">FOTOGRAFÍA</a></li>
                     <li><a class="navbar_categories grey-text text-lighten-3" href="#contact">CONTACTO</a></li>
-                    <li><a class="dropdown-button" data-beloworigin="true" href="#" data-activates="dropdown1"><i class="mdi mdi-web grey-text text-lighten-3"></i></a></li>
+                    <li><a class="dropdown-button" data-beloworigin="true" data-activates="dropdown1"><i class="mdi mdi-web grey-text text-lighten-3"></i></a></li>
                     <ul id="dropdown1" class="dropdown-content">
                         <li><a class="oospink-text" href="http://laureanoruiz.com">English</a></li>
                         <li><a class="oospink-text" href="http://laureanoruiz.com/es">Español</a></li>
@@ -331,10 +331,10 @@
         <div class="col s10 oospink" id="social">
             
             <!-- Email Modal Trigger -->
-            <i class="mdi mdi-email mdi-36px grey-text text-darken-4 modal-trigger" data-target="modal1"></i>
+            <i class="mdi mdi-email mdi-36px grey-text text-darken-4 modal-trigger" data-target="modal_mailform"></i>
 
             <!-- Modal Structure -->
-            <div id="modal1" class="modal bottom-sheet grey lighten-5">
+            <div id="modal_mailform" class="modal bottom-sheet grey lighten-5">
                 <div class="modal-content">
                     <h5 class="grey-text text-darken-3">Contactar por correo</h5>
                     <form class="col s10" id="mail_form" action="https://formspree.io/laureano.ruiz.perez@gmail.com" method="POST">
@@ -355,7 +355,7 @@
                             <textarea id="message" name="message" class="materialize-textarea grey-text text-darken-3"></textarea>
                             <label for="message" class="grey-text text-darken-3">Mensaje</label>
                         </div>
-                        <div align="right">
+                        <div class="right-align">
                             <a class="btn-flat btn_with_border waves-effect modal-action modal-close">Cerrar</a>
                             <button class="btn waves-effect waves-light oospink" type="submit">Enviar</button>
                         </div>

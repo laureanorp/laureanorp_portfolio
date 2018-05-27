@@ -21,15 +21,6 @@ nav ul li:hover {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: white;
-    border-radius: 0 0 8px 8px;
-}
-
- .above_image {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
     border-radius: 0 0 8px 8px;
 }
 
@@ -134,6 +125,18 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 .oospink-text {
   color: #E32D55 !important;
 }
+
+
+@media only screen and (min-width: 992px) {
+     #modal_mailform {
+      width: 70%;
+    }
+    #modal_mailform.bottom-sheet {
+      width: 70%;
+      border-radius: 8px 8px 0 0;
+        margin: auto;
+    } 
+  }
 
 .btn_with_border {
     border-width: 1px;
