@@ -31,6 +31,15 @@ nav ul li:hover {
     border-color: #CFCFCF;
 }
 
+.md2card {
+    box-shadow: none;
+}
+
+.md2card:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
 .card-content {
     overflow: auto;
 }
@@ -60,6 +69,10 @@ nav ul li:hover {
 
 .no_border {
      border-width: 0px;
+}
+
+.materialboxed:hover:not(.active) {
+  opacity: 1;
 }
 
 .navbar_title {
@@ -128,9 +141,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 
 @media only screen and (min-width: 992px) {
-     #modal_mailform {
-      width: 70%;
-    }
     #modal_mailform.bottom-sheet {
       width: 70%;
       border-radius: 8px 8px 0 0;
