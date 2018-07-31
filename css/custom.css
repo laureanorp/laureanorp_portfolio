@@ -9,12 +9,25 @@ nav {
     z-index: 999;
 }
 
-nav ul li:hover {
-   background-color: #424242;
+.nav-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
-.big_icon {
-    font-size: 4.5rem;
+nav ul li a{
+    display:inline-block;
+    align-content: center;
+    padding: 0rem 2.1rem 0rem 2.1rem;
+}
+
+nav ul li.lang-drop a {
+    position: absolute;
+    right: 0;
+    padding: 0rem 1.4rem 0rem 1.4rem;
+}
+
+nav ul li a:hover {
+    background-color: #424242;
 }
 
 .card .card-content.above_image {
@@ -88,6 +101,7 @@ nav ul li:hover {
 .hero_titles{
     font-family: "Product Sans";
     font-size: 25px;
+    letter-spacing: 6px;
     }
 
 .cv_titles{
@@ -114,7 +128,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #f50057;
+    color: #f50057;
 }
 
 #social {
