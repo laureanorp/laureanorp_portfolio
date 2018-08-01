@@ -42,7 +42,8 @@
                     <li><a class="navbar_categories grey-text text-lighten-3" href="#design">DISEÑO</a></li>
                     <li><a class="navbar_categories grey-text text-lighten-3" href="#photography">FOTOGRAFÍA</a></li>
                     <li><a class="navbar_categories grey-text text-lighten-3" href="#contact">CONTACTO</a></li>
-                    <li class="lang-drop"><a class="dropdown-button" data-beloworigin="true" data-activates="dropdown1"><i class="mdi mdi-web grey-text text-lighten-3"></i></a></li>
+                    <li><a class="theme_changer"><i class="mdi mdi-brightness-4 grey-text text-lighten-3"></i></a></li>
+                    <li><a class="dropdown-button lang-drop" data-beloworigin="true" data-activates="dropdown1"><i class="mdi mdi-web grey-text text-lighten-3"></i></a></li>
                     <ul id="dropdown1" class="dropdown-content">
                         <li><a class="oospink-text" href="http://laureanoruiz.com">English</a></li>
                         <li><a class="oospink-text" href="http://laureanoruiz.com/es">Español</a></li>
@@ -58,14 +59,11 @@
             <div class="center col s12">
                 <img src="../img/portrait_pink.png" class="z-depth-3 circle responsive-img" height="150" width="150" style="margin: 1rem">
                 <h5 class="hero_titles grey-text text-lighten-3">LAUREANO RUIZ</h5>
-                <p class="grey-text text-lighten-3">Biology student & designer in my free time</p>
+                <p class="grey-text text-lighten-3">Estudiante de biología y diseñador en mi tiempo libre</p>
             </div>
         </div>
     </div>
-    
-    <!-- Divider -->
-    <div class="divider"></div>  
-    
+
     <!-- Curriculum -->
     <div class="section scrollspy" id="curriculum">
         <div class="container"> 
@@ -300,7 +298,7 @@
                     <a href="https://photos.app.goo.gl/UdvzAP10G3eKTxzB3">
                         <div class="card md2card">
                             <div class="card-image-photo">
-                                <img src="../img/all_photos.jpg">
+                                <img src="../img/all_photos.png">
                             </div>
                             <div class="card-content above_image">
                                 <span class="card-title grey-text text-darken-4 left">Toda mi fotografía</span>
@@ -400,6 +398,38 @@
             }, 250);
         });
         var socialBarEl = $('#social');  
+    </script>
+    
+    <script>
+    // Dark and light theme button, when pressed:
+    document.querySelector('.theme_changer').addEventListener('click', () => {
+        // Toggles the "dark" class for the main body of the web
+        document.querySelector('body').classList.toggle('dark');
+        // Creates a variable including all the dividers in the web and toggles the "dark" class
+        var x = document.querySelectorAll('.divider');
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.toggle('dark');
+            }
+        // Creates a variable including all the cards in the web and toggles the "dark" class
+        var x = document.querySelectorAll('.card');
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.toggle('dark');
+            }
+        // Creates a variable including all the card titles in the web and toggles the grey-text class, so the color showing up is the one at CSS
+        var x = document.querySelectorAll('.card-content .card-title');
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.toggle('grey-text');
+            }
+        // Creates a variable including all the link button icons and toggles the grey-text class, so the color showing up is the one at CSS
+        var x = document.querySelectorAll('.card-content .mdi');
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].classList.toggle('grey-text');
+            }
+    })
     </script>
     
     <script>
