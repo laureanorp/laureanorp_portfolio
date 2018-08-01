@@ -85,6 +85,7 @@ nav ul li:hover, nav ul li a.lang-drop:hover, nav ul li a.theme_changer:hover {
 
 .card-content {
     overflow: auto;
+    color: #FAFAFA; 
 }
 
 .card-content .card-title {
@@ -95,12 +96,10 @@ nav ul li:hover, nav ul li a.lang-drop:hover, nav ul li a.theme_changer:hover {
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #FAFAFA;
 }
 
 .card-content .mdi{
-   width: 10%;
-   color: #FAFAFA; 
+   width: 10%; 
 }
 
 .card .card-image img {
@@ -170,6 +169,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 .modal.bottom-sheet {
     max-height: 75%;
+    background-color: aqua;
 }
 
 .oospink {

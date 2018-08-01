@@ -405,30 +405,18 @@
     document.querySelector('.theme_changer').addEventListener('click', () => {
         // Toggles the "dark" class for the main body of the web
         document.querySelector('body').classList.toggle('dark');
-        // Creates a variable including all the dividers in the web and toggles the "dark" class
-        var x = document.querySelectorAll('.divider');
-            var i;
-            for (i = 0; i < x.length; i++) {
-                x[i].classList.toggle('dark');
-            }
-        // Creates a variable including all the cards in the web and toggles the "dark" class
-        var x = document.querySelectorAll('.card');
-            var i;
-            for (i = 0; i < x.length; i++) {
-                x[i].classList.toggle('dark');
-            }
-        // Creates a variable including all the card titles in the web and toggles the grey-text class, so the color showing up is the one at CSS
-        var x = document.querySelectorAll('.card-content .card-title');
-            var i;
-            for (i = 0; i < x.length; i++) {
-                x[i].classList.toggle('grey-text');
-            }
-        // Creates a variable including all the link button icons and toggles the grey-text class, so the color showing up is the one at CSS
-        var x = document.querySelectorAll('.card-content .mdi');
-            var i;
-            for (i = 0; i < x.length; i++) {
-                x[i].classList.toggle('grey-text');
-            }
+        // Toggles the "dark" class for each divider
+        document.querySelectorAll('.divider').forEach(ele => {
+            ele.classList.toggle('dark');
+        });
+        // Toggles the "dark" class for each card
+        document.querySelectorAll('.card').forEach(ele => {
+            ele.classList.toggle('dark');
+        });
+        // Toggles the grey-text class, so the color showing up is the one at CSS
+        document.querySelectorAll('.card-content span').forEach(ele => {
+            ele.classList.toggle('grey-text');
+        });
     })
     </script>
     
