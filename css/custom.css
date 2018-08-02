@@ -36,19 +36,19 @@ nav ul li a.navbar_categories{
     padding: 0rem 2.5rem 0rem 2.5rem;
 }
 
-nav ul li i.lang-drop {
+nav ul li.lang-drop {
     position: absolute;
     right: 0;
     padding: 0rem 1rem 0rem 1rem
 }
 
-nav ul li i.theme_changer {
+nav ul li.theme_changer {
     position: absolute;
     left: 0;
     padding: 0rem 1rem 0rem 1rem
 }
 
-nav ul li:hover, nav ul li i.lang-drop:hover, nav ul li i.theme_changer:hover {
+nav ul li:hover {
     background-color: #424242;
 }
 
