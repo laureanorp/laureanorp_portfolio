@@ -39,7 +39,11 @@ nav ul li a.navbar_categories{
 nav ul li.lang-drop {
     position: absolute;
     right: 0;
-    padding: 0rem 1rem 0rem 1rem
+    padding: 0rem 1rem 0rem 1rem;
+        
+}
+
+nav ul li svg {
 }
 
 nav ul li.theme_changer {
@@ -100,8 +104,12 @@ nav ul li:hover {
     text-overflow: ellipsis;
 }
 
-.card-content .mdi{
+.card-content .systemicon{
    width: 10%; 
+}
+
+.card-content svg path.dark{
+    fill: #fafafa;   
 }
 
 .card .card-image img {
@@ -162,7 +170,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 #social {
     display: flex;
     justify-content: space-around;
-    padding: 0.2rem 14rem;
+    padding: 0.6rem 14rem;
 }
 
 #copy {
