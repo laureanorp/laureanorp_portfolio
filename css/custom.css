@@ -7,6 +7,7 @@ Remember the tree style sintax (dots, #, parents...)
 body {
     overflow-x: hidden;
     transition: all 0.8s;
+    transition-property: color, background-color, fill, border-color;
     }
 
 body.dark {
@@ -85,19 +86,13 @@ Some elements have their own .dark profile, but others don't, because the dark t
 }
 
 nav ul li a.navbar_categories{
-    display: inline-block;
-    align-content: center;
     padding: 0rem 2.5rem 0rem 2.5rem;
 }
 
 nav ul li.lang-drop {
     position: absolute;
     right: 0;
-    padding: 0rem 1rem 0rem 1rem;
-        
-}
-
-nav ul li svg {
+    padding: 0rem 1rem 0rem 1rem;      
 }
 
 nav ul li.theme_changer {
@@ -106,7 +101,7 @@ nav ul li.theme_changer {
     padding: 0rem 1rem 0rem 1rem
 }
 
-nav ul li:hover {
+nav ul li a:hover, nav ul li.lang-drop:hover, nav ul li.theme_changer:hover {
     background-color: #424242;
 }
 
@@ -132,7 +127,6 @@ nav ul li:hover {
     background-color: #212121;
     border-color: #424242;
 }
-
 
 .md2card {
     box-shadow: none;
