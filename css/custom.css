@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     transition: all 0.8s;
     transition-property: color, background-color, fill, border-color;
+    font-family: "Roboto", sans-serif;
     }
 
 body.dark {
@@ -75,7 +76,7 @@ nav {
 
 /*!
 ".nav-wrapper" is the main navbar with all the components, it uses "display:flex" so it can be centered
-".navbar_categories" are the navbar components except the language selector, ".lang-drop", and the theme changer, ".theme_changer"
+".navbar-categories" are the navbar components except the language selector, ".lang-drop", and the theme changer, ".theme-changer"
 They are separated, but use the same hover effect, so its contained on a single line ("nav ul li:hover, nav ul li.lang-drop > a:hover...)
 Some elements have their own .dark profile, but others don't, because the dark thee is achieved removing other class.
 */
@@ -85,7 +86,7 @@ Some elements have their own .dark profile, but others don't, because the dark t
     justify-content: center;
 }
 
-nav ul li a.navbar_categories{
+nav ul li a.navbar-categories{
     padding: 0rem 2.5rem 0rem 2.5rem;
 }
 
@@ -95,13 +96,13 @@ nav ul li.lang-drop {
     padding: 0rem 1rem 0rem 1rem;      
 }
 
-nav ul li.theme_changer {
+nav ul li.theme-changer {
     position: absolute;
     left: 0;
     padding: 0rem 1rem 0rem 1rem
 }
 
-nav ul li a:hover, nav ul li.lang-drop:hover, nav ul li.theme_changer:hover {
+nav ul li a:hover, nav ul li.lang-drop:hover, nav ul li.theme-changer:hover {
     background-color: #424242;
 }
 
@@ -109,7 +110,11 @@ nav ul li a:hover, nav ul li.lang-drop:hover, nav ul li.theme_changer:hover {
     background-color: #424242;
 }
 
-.card .card-content.above_image {
+h4 {
+    padding: 0 .75rem;
+}
+
+.card .card-content.above-image {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -137,13 +142,18 @@ nav ul li a:hover, nav ul li.lang-drop:hover, nav ul li.theme_changer:hover {
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
 }
 
+.md2card.dark:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
 .card-content {
     overflow: auto;
     color: #FAFAFA; 
 }
 
 .card-content .card-title {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: 400;
     width: 90%;
@@ -164,12 +174,11 @@ nav ul li a:hover, nav ul li.lang-drop:hover, nav ul li.theme_changer:hover {
     border-radius: 8px 8px 0px 0px;
 }
 
-.card .card-image-photo img {
+.card .card-image.round img {
     border-radius: 8px;
-    width: 100%;
 }
 
-.no_border {
+.no-border {
      border-width: 0px;
 }
 
@@ -177,19 +186,19 @@ nav ul li a:hover, nav ul li.lang-drop:hover, nav ul li.theme_changer:hover {
   opacity: 1;
 }
 
-.navbar_categories {
-    font-family: "Roboto Mono";
+.navbar-categories {
+    font-family: "Roboto Mono", monospace;
     font-size: 1.2rem;
 }
 
-.hero_titles{
-    font-family: "Roboto Mono";
+.hero-titles{
+    font-family: "Roboto Mono", monospace;
     font-size: 25px;
     letter-spacing: 5px;
     }
 
-.cv_titles{
-    font-family: "Roboto Mono";
+.cv-titles{
+    font-family: "Roboto Mono", monospace;
     }
 
 #contact {
@@ -238,37 +247,29 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 }
 
 @media only screen and (min-width: 992px) {
-    #modal_mailform.bottom-sheet {
+    #modal-mailform.bottom-sheet {
       width: 70%;
       border-radius: 8px 8px 0 0;
         margin: auto;
     } 
   }
 
-.btn_with_border {
-    border-width: 1px;
-    border-style: solid;
-    border-color: #CFCFCF;
-}
-
-.btn, .btn-large,
-.btn-flat {
+.btn, .btn-large, .btn-flat {
     border-radius: 4px;
     text-transform: none;
 }
 
 /* Trying to copy the hide-on-med-and-down class of MaterializeCSS */
 @media only screen and (max-width: 992px) {
-  .navbar_categories {
+  .navbar-categories {
     display: none !important;
   }
 }
 
 @media only screen and (max-device-width: 720px) {
     .container {
-        width: 80%;
+        width: 85%;
     }
-    
     #social {
         display: flex;
         justify-content: space-around;
