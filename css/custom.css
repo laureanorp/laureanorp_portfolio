@@ -206,11 +206,12 @@ h4 {
 }
 
 /* Colors of the input lines on the email form */
-.input-field input[type=text]:focus {
+.input-field input[type=text]:focus:not([readonly]) {
      border-bottom: 1px solid #E32D55;
      box-shadow: 0 1px 0 0 #E32D55;
 }
-.input-field input[type=email]:focus {
+
+.input-field input[type=email]:focus:not([readonly]) {
      border-bottom: 1px solid #E32D55;
      box-shadow: 0 1px 0 0 #E32D55;
 }
