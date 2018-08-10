@@ -377,39 +377,32 @@
         </div>           
     </footer>
 
-    <!-- Import jQuery before materialize.js (moved down here for mobile performance) -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- Import materialize.js (down here for mobile performance) -->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
         // ScrollSpy
-        $(document).ready(function(){
-            $('.scrollspy').scrollSpy({
+        M.ScrollSpy.init(document.querySelectorAll('.scrollspy'), {
             scrollOffset: 0
-            });
         });
-        
         //Dropdown
         M.Dropdown.init(document.querySelector('.lang-drop'), {
             coverTrigger: false
         });
-         // Modals
-         $(document).ready(function(){
-            $('.modal').modal();
-        });
-        // Materialize pulse when reach to contact section on PC
-        $('.navbar-categories[href="#contact"]').on('click', function() {
+        // Modal
+        M.Modal.init(document.querySelector('.modal'));
+        // Materialize pulse when reach contact section on PC
+        document.querySelector('.navbar-categories[href="#contact"]').addEventListener('click', () => {
+            var socialBarEl = document.querySelector('#social');  
             // wait for scroll 250ms
-            setTimeout(function() {
+            setTimeout(() => {
                 // start pulse
-                socialBarEl.addClass('pulse');
-
-                setTimeout(function() {
+                socialBarEl.classList.add('pulse');
+                setTimeout(() => {
                     // stop pulse
-                    socialBarEl.removeClass('pulse');
+                    socialBarEl.classList.remove('pulse');
                 }, 3000);
             }, 250);
         });
-            var socialBarEl = $('#social');  
         
         // Dark and light theme button, when pressed:
         document.querySelector('.theme-changer').addEventListener('click', () => {
@@ -431,7 +424,7 @@
             document.querySelectorAll('.card-content svg path').forEach(ele => {
                 ele.classList.toggle('dark');
             });
-        })
+        });
         
         // Google Analytics stuff
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
