@@ -53,7 +53,7 @@
     <div class="section scrollspy grey darken-4">
         <div class="container">
             <div class="center col s12">
-                <div class="center img-wrapper z-depth-2">
+                <div id="myphoto" class="scale-transition scale-out center img-wrapper z-depth-2">
                     <img src="img/myself_new.jpg">
                 </div>
                 <h5 class="hero-titles grey-text text-lighten-3">LAUREANO RUIZ</h5>
@@ -395,6 +395,10 @@
             preventScrolling: false,
             outDuration: 500
         });
+        //Scale in for my photo
+        setTimeout(() => {
+            document.querySelector('#myphoto').classList.add('scale-in');
+        }, 500);
         // Materialize pulse when reach contact section on PC
         document.querySelector('.navbar-categories[href="#contact"]').addEventListener('click', () => {
             var socialBarEl = document.querySelector('#social');  
