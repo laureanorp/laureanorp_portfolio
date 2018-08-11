@@ -83,7 +83,7 @@
                     <b>Conocimientos de programación</b> básicos en Python, HTML/CSS y Google App Inventor (lenguaje gráfico para aplicaciones Android). Certificado Computer Science 101 en Stanford Online (Accomplishment 86%).
                     <p>
                     Usuario de sistemas operativos de escritorio: Mac OS X (de Leopard a Sierra), Windows (de 7 a 10).
-                    Experiencia alta en sistema operativo Android como usuario: desde 2.2 Froyo hasta 9.0 P, bien informado de la lista de cambios de cada versión. Al día del ecosistema y de la mayoría de servicios de Google.
+                    Experiencia alta en sistema operativo Android como usuario: desde 2.2 Froyo hasta 9.0 Pie, bien informado de la lista de cambios de cada versión. Al día del ecosistema y de la mayoría de servicios de Google.
                     </p>
                     <p>
                     Software de oficina: Procesadores de texto, hojas de cálculo, y presentaciones. 
@@ -389,7 +389,10 @@
         //Materialbox
         M.Materialbox.init(document.querySelectorAll('.materialboxed'));
         // Modal
-        M.Modal.init(document.querySelector('.modal'));
+        M.Modal.init(document.querySelector('.modal'), {
+            preventScrolling: false,
+            outDuration: 500
+        });
         // Materialize pulse when reach contact section on PC
         document.querySelector('.navbar-categories[href="#contact"]').addEventListener('click', () => {
             var socialBarEl = document.querySelector('#social');  

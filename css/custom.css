@@ -261,12 +261,17 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     max-height: 75%;
 }
 
+.modal.bottom-sheet h5 {
+    margin-top: 0.656rem;
+}
+
 #modal-mailform svg {
     top: -0.2rem;
     position: relative;
     width: 28px;
     height: 28px;
 }
+
 
 .oospink {
   background-color: #E32D55 !important;
@@ -278,8 +283,8 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 @media only screen and (min-width: 992px) {
     #modal-mailform.bottom-sheet {
-      width: 70%;
-      border-radius: 8px 8px 0 0;
+        width: 60%;
+        border-radius: 8px 8px 0 0;
         margin: auto;
     } 
   }
