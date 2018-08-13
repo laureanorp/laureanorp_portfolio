@@ -102,14 +102,18 @@ nav ul li.theme-changer {
     padding: 0rem 1rem 0rem 1rem
 }
 
+.lang-drop, .theme-changer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 nav ul li a.navbar-categories:hover, nav ul li.lang-drop:hover, nav ul li.theme-changer:hover {
     background-color: #424242;
     cursor:pointer;
 }
 
 nav ul li.lang-drop svg, nav ul li.theme-changer svg {
-    top: 0.5rem;
-    position: relative;
     width: 24px;
     height: 24px;
 }
@@ -160,14 +164,14 @@ h4 {
     color: #FAFAFA; 
 }
 
-.card-content .card-title {
-    font-family: "Roboto", sans-serif;
+.card .card-content .card-title {
     font-size: 20px;
     font-weight: 400;
     width: 90%;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 0px;
 }
 
 .card-content .systemicon {
@@ -209,22 +213,16 @@ h4 {
 .hero-titles{
     font-family: "Roboto Mono", monospace;
     font-size: 25px;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     }
 
 .cv-titles{
-    font-family: "Roboto Mono", monospace;
+    font-family: "Roboto", monospace;
+    font-weight: 500;
     }
 
 #contact {
     padding: 0rem;
-}
-
-#social svg {
-    top: 0.2rem;
-    position: relative;
-    width: 34px;
-    height: 34px;
 }
 
 /* Colors of the input lines on the email form */
@@ -250,7 +248,17 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 #social {
     display: flex;
     justify-content: space-around;
-    padding: 0.6rem 14rem;
+    padding: 0.8rem 14rem;
+}
+
+#social a {
+    display: flex;
+    align-items: center;
+}
+
+#social svg {
+    width: 34px;
+    height: 34px;
 }
 
 #copy {
@@ -271,7 +279,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     width: 28px;
     height: 28px;
 }
-
 
 .oospink {
   background-color: #E32D55 !important;
@@ -308,6 +315,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     #social {
         display: flex;
         justify-content: space-around;
-        padding: 1rem 0rem;
+        padding: 1.1rem 0rem;
         }
     }
