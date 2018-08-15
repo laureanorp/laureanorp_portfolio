@@ -81,6 +81,10 @@ They are separated, but use the same hover effect, so its contained on a single 
 Some elements have their own .dark profile, but others don't, because the dark thee is achieved removing other class.
 */
 
+nav .container {
+    height: 100%;
+}
+
 .nav-wrapper {
     display: flex;
     justify-content: center;
@@ -124,6 +128,11 @@ nav ul li.lang-drop svg, nav ul li.theme-changer svg {
 
 h4 {
     padding: 0 .75rem;
+}
+
+#curriculum p.oospink-text {
+    margin-bottom: 0rem;
+    font-weight: 500;
 }
 
 .card .card-content.above-image {
@@ -216,11 +225,6 @@ h4 {
     letter-spacing: 4px;
     }
 
-.cv-titles{
-    font-family: "Roboto", monospace;
-    font-weight: 500;
-    }
-
 #contact {
     padding: 0rem;
 }
@@ -251,7 +255,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     padding: 0.8rem 14rem;
 }
 
-#social a {
+#social > a {
     display: flex;
     align-items: center;
 }
