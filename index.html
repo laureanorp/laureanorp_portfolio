@@ -28,14 +28,16 @@
 </head>  
     
     
-<body>    
+<body>
+    <!-- Network Animation -->
     <canvas></canvas>
+    
     <!-- Navigation -->
     <nav class="z-depth-0">
         <div class="container">
             <div class="nav-wrapper">
                 <ul>
-                    <li><a class="navbar-categories grey-text text-lighten-3" href="#curriculum">CURRICULUM</a></li>
+                    <li><a class="navbar-categories grey-text text-lighten-3" href="#curriculum">RESUME</a></li>
                     <li><a class="navbar-categories grey-text text-lighten-3" href="#design">DESIGN</a></li>
                     <li><a class="navbar-categories grey-text text-lighten-3" href="#photography">PHOTOGRAPHY</a></li>
                     <li><a class="navbar-categories grey-text text-lighten-3" href="#contact">CONTACT</a></li>
@@ -66,13 +68,13 @@
     <!-- Curriculum -->
     <div class="section scrollspy" id="curriculum">
         <div class="container"> 
-            <h4>Curriculum Vitae</h4>
+            <h4>Resume</h4>
             <div class="row">
                 <div class="col s12 m3 l3 xl2">
                     <p class="oospink-text">Current activity</p>
                 </div>
                 <div class="col s12 m9 l9 xl10">
-                     <p>Studying fourth year of Biology degree on University of Valencia, degree I started on University of La Laguna, Tenerife. Graphic design of user interfaces, icons and logos as a hobby.</p>
+                     <p>Studying fourth year of Biology degree at University of Valencia, degree I started at University of La Laguna, Tenerife. Graphic design of user interfaces, icons and logos as a hobby.</p>
                 </div>
                 <div class="col s12 m3 l3 xl2">
                     <p class="oospink-text">Abilities</p>
@@ -434,7 +436,7 @@
         
         // Network animation
         var canvas = document.querySelector("canvas");
-        canvas.width = document.querySelector("#intro").offsetWidth + document.querySelector("nav").offsetWidth;
+        canvas.width = document.querySelector("#intro").offsetWidth;
         canvas.height = document.querySelector("#intro").offsetHeight + document.querySelector("nav").offsetHeight;
         var ctx = canvas.getContext("2d");
         var TAU = 2 * Math.PI;
@@ -483,14 +485,6 @@
             }
           }
           lastTime = Date.now();
-        }
-        var mouseX = -1e9, mouseY = -1e9;
-        document.addEventListener('mousemove', function(event) {
-          mouseX = event.clientX;
-          mouseY = event.clientY;
-        });
-        function distMouse(ball) {
-          return Math.hypot(ball.x - mouseX, ball.y - mouseY);
         }
         function draw() {
           ctx.globalAlpha=1;
