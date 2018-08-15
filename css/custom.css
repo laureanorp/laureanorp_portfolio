@@ -13,7 +13,7 @@ body {
 
 body.dark {
     background: #212121;
-    color: #f0f0f0;
+    color: #fafafa;
 }
 
 nav {
@@ -79,7 +79,7 @@ nav {
 ".nav-wrapper" is the main navbar with all the components, it uses "display:flex" so it can be centered
 ".navbar-categories" are the navbar components except the language selector, ".lang-drop", and the theme changer, ".theme-changer"
 They are separated, but use the same hover effect, so its contained on a single line ("nav ul li:hover, nav ul li.lang-drop > a:hover...)
-Some elements have their own .dark profile, but others don't, because the dark thee is achieved removing other class.
+Some elements have their own .dark profile, but others don't, because the dark theme is achieved removing other class.
 */
 
 nav .container {
@@ -157,6 +157,13 @@ h4 {
     border-style: solid;
     border-width: 1px;
     border-color: #CFCFCF;
+    cursor:pointer;
+}
+
+/* This is not z-depth 2 neither 3, instead is a midpoint between both made by me */
+.card:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 6px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 12px 1px rgba(0, 0, 0, 0.12), 0 4px 4px -2px rgba(0, 0, 0, 0.25);
 }
 
 .card.dark {
@@ -178,34 +185,35 @@ h4 {
     box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }
 
-.card-content {
+.card .card-content {
     overflow: auto;
-    color: #FAFAFA; 
+    color: #FAFAFA;
+    padding: 20px;
 }
 
 .card .card-content .card-title {
     font-size: 20px;
     font-weight: 400;
-    width: 90%;
+    width: 100%;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom: 0px;
 }
 
-.card-content .systemicon {
-   width: 10%; 
+.card .card-content .card-title {
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0px;
+    color: #212121;
 }
 
-.card-content .systemicon svg {
-    top:0.25rem;
-    position: relative;
-    width:24px;
-    height:24px;
-}
-
-.card-content svg path.dark{
-    fill: #fafafa;   
+.card .card-content .card-title.dark {
+    color: #fafafa;
 }
 
 .card .card-image img {
