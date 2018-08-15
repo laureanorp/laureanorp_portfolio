@@ -19,6 +19,7 @@ body.dark {
 nav {
     position:relative;
     z-index: 999;
+    background-color: transparent;
 }
 
 /* CSS variables. Not needed for the effect to work. */
@@ -120,6 +121,15 @@ nav ul li a.navbar-categories:hover, nav ul li.lang-drop:hover, nav ul li.theme-
 nav ul li.lang-drop svg, nav ul li.theme-changer svg {
     width: 24px;
     height: 24px;
+}
+
+#intro .container {
+    position: relative;
+    z-index: 1;
+}
+
+canvas {
+    position: absolute;
 }
 
 .divider.dark {
