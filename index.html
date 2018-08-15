@@ -54,7 +54,7 @@
     <div class="section scrollspy grey darken-4" id="intro">
         <div class="container">
             <div class="center col s12">
-                <div id="myphoto" class="scale-transition scale-out center img-wrapper z-depth-2">
+                <div id="myphoto" class="center img-wrapper z-depth-2">
                     <img src="img/myself_new.jpg">
                 </div>
                 <h5 class="hero-titles grey-text text-lighten-3">LAUREANO RUIZ</h5>
@@ -396,10 +396,6 @@
             preventScrolling: false,
             outDuration: 500
         });
-        //Scale in for my photo
-        setTimeout(() => {
-            document.querySelector('#myphoto').classList.add('scale-in');
-        }, 500);
         // Materialize pulse when reach contact section on PC
         document.querySelector('.navbar-categories[href="#contact"]').addEventListener('click', () => {
             var socialBarEl = document.querySelector('#social');  
@@ -469,7 +465,7 @@
           this.draw = function(ctx, can) {
             ctx.beginPath();
             ctx.globalAlpha = .4;
-            ctx.fillStyle = '#E32D55';
+            ctx.fillStyle = '#424142';
             ctx.arc((0.5 + this.x) | 0, (0.5 + this.y) | 0, 3, 0, TAU, false);
             ctx.fill();
           }
@@ -508,7 +504,7 @@
               var ball2 = balls[index2];
               var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
                 if (dist < 100) {
-                  ctx.strokeStyle = "#E32D55";
+                  ctx.strokeStyle = "#424242";
                   ctx.globalAlpha = 1 - (dist > 100 ? .8 : dist / 150);
                   ctx.lineWidth = "2px";
                   ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
