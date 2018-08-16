@@ -145,6 +145,14 @@ h4 {
     font-weight: 500;
 }
 
+#curriculum p {
+    margin: 0.5rem 0rem;
+}
+
+#curriculum .col {
+    padding-bottom: 0.5rem;
+}
+
 .card .card-content.above-image {
     position: absolute;
     bottom: 0;
@@ -285,6 +293,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 #copy {
     padding: 1.4rem;
+    font-family: "Roboto Mono";
     }
 
 .modal.bottom-sheet {
