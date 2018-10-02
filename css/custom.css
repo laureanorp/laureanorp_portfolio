@@ -160,6 +160,28 @@ h4 {
     border-radius: 0 0 8px 8px;
 }
 
+.card-reveal .btn.btn1 {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.card-reveal .btn.btn2 {
+    position: absolute;
+    bottom: 24px;
+    right: 170px;
+    display: flex;
+    align-items: center;
+}
+
+#design svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
 .card {
     border-radius: 8px;
     border-style: solid;
@@ -175,6 +197,11 @@ h4 {
 }
 
 .card.dark {
+    background-color: #212121;
+    border-color: #424242;
+}
+
+.card .card-reveal.dark {
     background-color: #212121;
     border-color: #424242;
 }
@@ -199,35 +226,21 @@ h4 {
     padding: 20px;
 }
 
-.card .card-content .card-title {
-    font-size: 20px;
-    font-weight: 400;
-    width: 100%;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 0px;
-}
-
-.card .card-content .card-title {
-    font-size: 20px;
-    font-weight: 400;
-    width: 100%;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 0px;
+.card .card-title {
     color: #212121;
+    font-size: 22px;
+    font-weight: 300;
 }
 
-.card .card-content .card-title.dark {
+.card .card-title.dark {
     color: #fafafa;
 }
 
 .card .card-image img {
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 8px;
 }
 
+/* Not needed after 5.8 update, since card-image has 8px corners too. Delete this when you feel confortable */
 .card .card-image.round img {
     border-radius: 8px;
 }
