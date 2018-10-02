@@ -160,12 +160,17 @@ h4 {
     border-radius: 0 0 8px 8px;
 }
 
-.card-reveal .btn {
+.card-bottom {
     position: absolute;
-    bottom: 24px;
     right: 24px;
+    bottom: 24px;
+}
+
+.card-reveal .btn {
     display: flex;
     align-items: center;
+    padding-left: 12px;
+    margin-left: 12px;
 }
 
 #design svg {
