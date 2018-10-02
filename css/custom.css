@@ -98,13 +98,15 @@ nav ul li a.navbar-categories{
 nav ul li.lang-drop {
     position: absolute;
     right: 0;
-    padding: 0rem 1rem 0rem 1rem;      
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
 nav ul li.theme-changer {
     position: absolute;
     left: 0;
-    padding: 0rem 1rem 0rem 1rem
+    padding: 0rem 1rem 0rem 1rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .lang-drop, .theme-changer {
@@ -185,6 +187,7 @@ h4 {
     border-width: 1px;
     border-color: #CFCFCF;
     cursor:pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* This is not z-depth 2 neither 3, instead is a midpoint between both made by me */
@@ -223,13 +226,13 @@ h4 {
     padding: 20px;
 }
 
-.card .card-title {
+.card-title {
     color: #212121;
     font-size: 22px;
     font-weight: 300;
 }
 
-.card .card-title.dark {
+.card-title.dark {
     color: #fafafa;
 }
 
