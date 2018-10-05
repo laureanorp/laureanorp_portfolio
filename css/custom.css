@@ -186,6 +186,7 @@ h4 {
     border-style: solid;
     border-width: 1px;
     border-color: #CFCFCF;
+    overflow: hidden;
     cursor:pointer;
     -webkit-tap-highlight-color: transparent;
 }
@@ -234,15 +235,6 @@ h4 {
 
 .card-title.dark {
     color: #fafafa;
-}
-
-.card .card-image img {
-    border-radius: 8px;
-}
-
-/* Not needed after 5.8 update, since card-image has 8px corners too. Delete this when you feel confortable */
-.card .card-image.round img {
-    border-radius: 8px;
 }
 
 .no-border {
