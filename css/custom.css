@@ -40,7 +40,7 @@ nav {
     overflow: hidden;
     padding: var(--spacing);
     position: relative;
-     border-radius: 50%;
+    border-radius: 50%;
     height: 170px;
     width: 170px;
     margin-left: auto;
@@ -283,7 +283,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 #social {
     display: flex;
     justify-content: space-around;
-    padding: 0.8rem 14rem;
+    padding: 0.8rem 24rem;
 }
 
 #social > a {
@@ -339,9 +339,12 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 /* Trying to copy the hide-on-med-and-down class of MaterializeCSS */
 @media only screen and (max-width: 992px) {
-  .navbar-categories {
-    display: none !important;
-  }
+    .navbar-categories {
+        display: none !important;
+    }
+    #social {
+        padding: 1.1rem 12rem;
+    }
 }
 
 @media only screen and (max-device-width: 720px) {
@@ -349,8 +352,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
         width: 85%;
     }
     #social {
-        display: flex;
-        justify-content: space-around;
         padding: 1.1rem 0rem;
         }
     }
