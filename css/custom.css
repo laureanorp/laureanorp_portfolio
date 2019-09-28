@@ -9,6 +9,7 @@ body {
     transition: all 0.6s;
     transition-property: color, background-color, fill, border-color;
     font-family: "Roboto", sans-serif;
+    font-size: 16px;
     }
 
 body.dark {
@@ -77,7 +78,7 @@ nav {
 
 /*!
 ".nav-wrapper" is the main navbar with all the components, it uses "display:flex" so it can be centered
-".navbar-categories" are the navbar components except the language selector, ".lang-drop", and the theme changer, ".theme-changer"
+Language selector is ".lang-drop", and the theme changer is ".theme-changer"
 They are separated, but use the same hover effect, so its contained on a single line ("nav ul li:hover, nav ul li.lang-drop > a:hover...)
 Some elements have their own .dark profile, but others don't, because the dark theme is achieved removing other class.
 */
@@ -89,10 +90,6 @@ nav .container {
 .nav-wrapper {
     display: flex;
     justify-content: center;
-}
-
-nav ul li a.navbar-categories{
-    padding: 0rem 2.5rem 0rem 2.5rem;
 }
 
 nav ul li.lang-drop {
@@ -115,8 +112,8 @@ nav ul li.theme-changer {
     align-items: center;
 }
 
-nav ul li a.navbar-categories:hover, nav ul li.lang-drop:hover, nav ul li.theme-changer:hover {
-    background-color: #424242;
+nav ul li.lang-drop:hover, nav ul li.theme-changer:hover {
+    background-color: rgba(0, 0, 0, 0.04);
     cursor:pointer;
 }
 
@@ -125,9 +122,31 @@ nav ul li.lang-drop svg, nav ul li.theme-changer svg {
     height: 24px;
 }
 
+.section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+@font-face {
+    font-family: "manrope";
+    src: url("../fonts/manrope-bold.otf");
+}
+
+#intro {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 #intro .container {
     position: relative;
     z-index: 1;
+}
+
+#gradient {
+    background-image: linear-gradient(rgba(255, 255, 255, 0), white);
+    height: 50px;
+    z-index: 1000;
+    position: relative;
 }
 
 canvas {
@@ -138,13 +157,11 @@ canvas {
     background-color: #424242;
 }
 
-h4 {
-    padding: 0 .75rem;
-}
-
 #curriculum p.oospink-text {
     margin-bottom: 0rem;
     font-weight: 500;
+    text-align: right;
+    font-family: "manrope", monospace;
 }
 
 #curriculum p {
@@ -155,11 +172,15 @@ h4 {
     padding-bottom: 0.5rem;
 }
 
-.card .card-content.above-image {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    border-radius: 0 0 8px 8px;
+#curriculum svg {
+    height: 50px;  
+    margin-top: 0.4rem; 
+    position: relative;
+    float: right;
+}
+
+#curriculum svg.dark path {
+    fill: #424242;
 }
 
 .card-bottom {
@@ -237,21 +258,12 @@ h4 {
     color: #fafafa;
 }
 
-.no-border {
-     border-width: 0px;
-}
-
 .materialboxed:hover:not(.active) {
   opacity: 1;
 }
 
-.navbar-categories {
-    font-family: "Roboto Mono", monospace;
-    font-size: 1.2rem;
-}
-
 .hero-titles{
-    font-family: "Roboto Mono", monospace;
+    font-family: "manrope", monospace;
     font-size: 25px;
     letter-spacing: 4px;
     }
@@ -298,7 +310,8 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 #copy {
     padding: 1.4rem;
-    font-family: "Roboto Mono";
+    font-family: "manrope", monospace;
+    font-weight: 700;
     }
 
 .modal.bottom-sheet {
@@ -314,6 +327,10 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     position: relative;
     width: 28px;
     height: 28px;
+}
+
+#modal-mailform .title {
+    font-family: "manrope", monospace;
 }
 
 .oospink {
@@ -339,9 +356,6 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 
 /* Trying to copy the hide-on-med-and-down class of MaterializeCSS */
 @media only screen and (max-width: 992px) {
-    .navbar-categories {
-        display: none !important;
-    }
     #social {
         padding: 1.1rem 12rem;
     }
