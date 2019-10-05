@@ -114,8 +114,12 @@ nav ul li.theme-changer {
     align-items: center;
 }
 
+.lang-drop svg path, .theme-changer svg path {
+    fill: #424242;
+}
+
 .lang-drop svg.dark path, .theme-changer svg.dark path {
-    fill: #9E9E9E;
+    fill: #BDBDBD;
 }
 
 nav ul li.lang-drop:hover, nav ul li.theme-changer:hover {
@@ -183,6 +187,10 @@ canvas {
     margin-top: 0.4rem; 
     position: relative;
     float: right;
+}
+
+#curriculum svg path {
+    fill: #E0E0E0;
 }
 
 #curriculum svg.dark path {
@@ -262,6 +270,10 @@ canvas {
 
 .card-title.dark {
     color: #fafafa;
+}
+
+.card svg path {
+    fill: #ffffff;
 }
 
 .materialboxed:hover:not(.active) {
@@ -349,6 +361,18 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
     position: relative;
     width: 28px;
     height: 28px;
+}
+
+.page-footer svg path {
+    fill: #212121;
+}
+
+#modal-mailform svg path {
+    fill: #424242;
+}
+
+#modal-mailform svg.dark path {
+    fill: #E0E0E0;
 }
 
 #modal-mailform .title {
