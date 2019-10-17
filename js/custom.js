@@ -80,7 +80,7 @@ document.querySelector('.theme-changer').addEventListener('click', () => {
 // Click on card to close card-reveal 
 (function ($, anim) {
     $(document).on('click', '.card', function (e) {
-        if ($(this).children('.card-reveal').length) {
+        if ($(this).children('.card-reveal').length && $(e.target).closest('.card-reveal').length > 0) {
             var $card = $(e.target).closest('.card-reveal');
             if ($card.data('initialOverflow') === undefined) {
                 $card.data('initialOverflow', $card.css('overflow') === undefined ? '' : $card.css('overflow'));
