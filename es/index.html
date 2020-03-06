@@ -56,7 +56,7 @@
                     <img src="../img/myself_new.jpg">
                 </div>
                 <h5 class="hero-titles">Laureano Ruiz</h5>
-                <p class="subtitle">Estudiante de biología, diseñador en mi tiempo libre. Bienvenido a mi portfolio.</p>
+                <p class="subtitle">Estudiante de biología, diseñador. Bienvenido a mi portfolio.</p>
             </div>
         </div>
     </div>
@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="row">
                     <div class="col s12 m2 l2 xl2 resume-title">
-                        <p class="oospink-text">Sobre mí</p>
+                        <p class="oospink-text">About me</p>
                         <svg viewBox="0 0 24 24"><path d="M9,22A1,1 0 0,1 8,21V18H4A2,2 0 0,1 2,16V4C2,2.89 2.9,2 4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H13.9L10.2,21.71C10,21.9 9.75,22 9.5,22V22H9M10,16V19.08L13.08,16H20V4H4V16H10M16,14H8V13C8,11.67 10.67,11 12,11C13.33,11 16,11.67 16,13V14M12,6A2,2 0 0,1 14,8A2,2 0 0,1 12,10A2,2 0 0,1 10,8A2,2 0 0,1 12,6Z" /></svg>
                     </div>
                     <div class="resume-text col s12 m4 l4 xl4">
@@ -136,253 +136,302 @@
     <!-- Designs -->
     <div class="section scrollspy" id="design">
         <div class="container">
+            <!-- Design projects Modal Structure -->
+            <div id="modal-design" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h4>Ups!</h4>
+                    <p>Si estas leyendo esto, es que la he c*gado en algún lugar de mi JS. Solo soy un biólogo con algunas habilidades en diseño web, ayúdame reportando el bug :(</p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+
             <div class="row">
                 <!-- SIRU -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/Siru.png">
+                    <div class="card md2card" id="siru">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/Siru.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Siru Icon Pack</span>
+                        <div class="design-dictionary">
+                            <p>Siru Icon Pack</p>
                             <p>Uno de los pack de iconos más famosos para Android, llegando a las 100K descargas y teniendo miles de usuarios activos. Creados siguiendo cuidadosamente las líneas de Material Design. 2015-2017.</p>
-                            <a class="right card-bottom btn orange accent-4 waves-effect waves-light" href="https://play.google.com/store/apps/details?id=com.dotsillustration.siru"><svg viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" /></svg>Google Play</a>
+                            <p><a class="right btn orange accent-4 waves-effect waves-light" href="https://play.google.com/store/apps/details?id=com.dotsillustration.siru"><svg viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" /></svg>Google Play</a></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- VECTORS -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
+                    <div class="card md2card" id="vector">
+                        <div class="card-image modal-trigger" href="#modal-design">
                             <img class="activator" src="../img/dad_vector.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Retratos vectoriales</span>
+                        <div class="design-dictionary">
+                            <p>Retratos vectoriales</p>
                             <p>Retratos minimalistas clásicos realizados en Illustrator para diferentes clientes. La clave es reflejar los rasgos más característicos de la persona sin llegar a saturar la composición. 2015-Presente.</p>
-                            <a class="right card-bottom btn oospink waves-effect waves-light" href="https://photos.app.goo.gl/SLS3DKq4LgjPAErZ6"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg>Ver todos</a>
+                            <p><a class="right btn oospink waves-effect waves-light" href="https://photos.app.goo.gl/SLS3DKq4LgjPAErZ6"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg>Ver todos</a></p>
                         </div>
                     </div>
                 </div>
-                 <!-- VECTORS SELL -->
-                 <div class="col s12 m6 l6 xl4">
-                        <div class="card md2card">
-                            <div class="card-image">
-                                <img class="activator" src="../img/laure_vector.png">
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title">¡Consigue tu propio vector!</span>
-                                <p>Consigue un vector de tu foto favorita por solo 20€. Contactáme con el boton de abajo y hablaremos 😄. Tiempo de entrega: 2 días aprox.</p>
-                                <a href="#modal-mailform" class="modal-trigger right card-bottom btn oospink waves-effect waves-light" href="https://photos.app.goo.gl/SLS3DKq4LgjPAErZ6"><svg viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg>Contacto</a>
-                            </div>
+
+                <!-- VECTORS SELL -->
+                <div class="col s12 m6 l6 xl4">
+                    <div class="card md2card" id="vectors_sell">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/laure_vector.png">
+                        </div>
+                        <div class="design-dictionary">
+                            <p>¡Consigue tu propio vector!</p>
+                            <p>Consigue un vector de tu foto favorita por solo 20€. Contactáme con el boton de abajo y hablaremos 😄. Tiempo de entrega: 2 días aprox.</p>
+                            <p><a href="#modal-mailform" class="modal-trigger right  btn oospink waves-effect waves-light" href="https://photos.app.goo.gl/SLS3DKq4LgjPAErZ6"><svg viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg>Contacto</a></p>
                         </div>
                     </div>
+                </div>
+                
                 <!-- CLEMENS S. APPS LOGO -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/cs_apps.png">
+                    <div class="card md2card" id="clemens">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/cs_apps.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Logo S. Apps</span>
+                        <div class="design-dictionary">
+                            <p>Logo S. Apps</p>
                             <p>Logo de Clemens Schartmüller, desarrollador de aplicaciones Android. 2015.</p>
-                            <a class="right card-bottom btn oospink waves-effect waves-light" href="https://play.google.com/store/apps/dev?id=8015543646387839777"><svg viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" /></svg>Apps de Clemens</a>
+                            <p><a class="right  btn oospink waves-effect waves-light" href="https://play.google.com/store/apps/dev?id=8015543646387839777"><svg viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" /></svg>Apps de Clemens</a></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- BOEFFLA KERNEL -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/boeffla_kernel.png">
+                    <div class="card md2card" id="boeffla">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/boeffla_kernel.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Icono Boeffla Kernel</span>
+                        <div class="design-dictionary">
+                            <p>Icono Boeffla Kernel</p>
                             <p>Icono para la aplicación que gestiona uno de los kernels personalizables más famosos de Android, Boeffla Kernel. 2016.</p>
-                            <a class="right card-bottom btn oospink waves-effect waves-light" href="https://www.boeffla.de/"><svg viewBox="0 0 24 24"><path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>Web de Boeffla</a>
+                            <p><a class="right  btn oospink waves-effect waves-light" href="https://www.boeffla.de/"><svg viewBox="0 0 24 24"><path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>Web de Boeffla</a></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- TRAIN TICKETS -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/train_tickets.png">
+                    <div class="card md2card" id="ttickets">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/train_tickets.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Portada Train Tickets</span>
+                        <div class="design-dictionary">
+                            <p>Portada Train Tickets</p>
                             <p>Portada inspirada en iconografía Material Design para el álbum Train Tickets, música experimental por Tony Peña. 2017.</p>
-                            <a class="right card-bottom btn oospink waves-effect waves-light" href="https://archive.org/details/Petroglyph503TonyPea-TrainTickets"><svg viewBox="0 0 24 24"><path d="M16,9V7H12V12.5C11.58,12.19 11.07,12 10.5,12A2.5,2.5 0 0,0 8,14.5A2.5,2.5 0 0,0 10.5,17A2.5,2.5 0 0,0 13,14.5V9H16M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></svg>Album</a>
+                            <p><a class="right  btn oospink waves-effect waves-light" href="https://archive.org/details/Petroglyph503TonyPea-TrainTickets"><svg viewBox="0 0 24 24"><path d="M16,9V7H12V12.5C11.58,12.19 11.07,12 10.5,12A2.5,2.5 0 0,0 8,14.5A2.5,2.5 0 0,0 10.5,17A2.5,2.5 0 0,0 13,14.5V9H16M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></svg>Album</a></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- TRAIN TALKS -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/train_talks.png">
+                    <div class="card md2card" id="ttalks">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/train_talks.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Portada Train Talks</span>
+                        <div class="design-dictionary">
+                            <p>Portada Train Talks</p>
                             <p>Otra portada para el álbum Train Talks, música experimental por Tony Peña. 2017.</p>
-                            <a class="right card-bottom btn oospink waves-effect waves-light" href="https://archive.org/details/5TreatWithRespect_201702/1-Listen.wav"><svg viewBox="0 0 24 24"><path d="M16,9V7H12V12.5C11.58,12.19 11.07,12 10.5,12A2.5,2.5 0 0,0 8,14.5A2.5,2.5 0 0,0 10.5,17A2.5,2.5 0 0,0 13,14.5V9H16M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></svg>Album</a>
+                            <p><a class="right  btn oospink waves-effect waves-light" href="https://archive.org/details/5TreatWithRespect_201702/1-Listen.wav"><svg viewBox="0 0 24 24"><path d="M16,9V7H12V12.5C11.58,12.19 11.07,12 10.5,12A2.5,2.5 0 0,0 8,14.5A2.5,2.5 0 0,0 10.5,17A2.5,2.5 0 0,0 13,14.5V9H16M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2Z" /></svg>Album</a></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- L-JAN LOGO -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/L_Jan_dark.png">
+                    <div class="card md2card" id="ljan">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/L_Jan_dark.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Viejo logo propio</span>
+                        <div class="design-dictionary">
+                            <p>Viejo logo propio</p>
                             <p>Típico logo que haces cuando todos a tu alrededor tienen uno. El pseudónimo L-Jan viene de viejas bromas con mi compañero Javi Toro. 2016.</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- PSX -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/PlayStationMD.png">
+                    <div class="card md2card" id="psx">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/PlayStationMD.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">OG Play Station</span>
+                        <div class="design-dictionary">
+                            <p>OG Play Station</p>
                             <p>Diseño minimalista de la bella Play Station original. 2016.</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
+
+
                 <!-- O LOGO -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/O.png">
+                    <div class="card md2card" id="oreo">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/O.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Android Oreo Logo</span>
+                        <div class="design-dictionary">
+                            <p>Logo Android Oreo</p>
                             <p>El logo preliminar de Android 8.0 Oreo, pero llevado al mundo de las sombras de Material Design. 2017.</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- SPOTIFY PLAYLIST COVERS -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/playlists_covers.png">
+                    <div class="card md2card" id="spotify">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/playlists_covers.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Portadas para listas de Spotify</span>
+                        <div class="design-dictionary">
+                            <p>Portadas para listas de Spotify</p>
                             <p>Portadas simples para mis listas personales de Spotify. Porque la consistencia siempre es importante. 2016-2018.</p>
-                            <a class="right card-bottom btn oospink waves-effect waves-light" href="https://photos.app.goo.gl/2NP4R6pdMPv3YxSX8"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg>Ver todas</a>
+                            <p><a class="right  btn oospink waves-effect waves-light" href="https://photos.app.goo.gl/2NP4R6pdMPv3YxSX8"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg>Ver todas</a></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- 11 JORNADAS GENETICA ULL -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/jornadas_genetica.png">
+                    <div class="card md2card" id="genetica">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/jornadas_genetica.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Cartel 11 Jornadas de Genética</span>
+                        <div class="design-dictionary">
+                            <p>Cartel 11 Jornadas de Genética</p>
                             <p>Cartel ganador elegido para anunciar las Jornadas de Genética de 2018 en la universidad de La Laguna. Realizado junto a mi compañero Mauro, 2018.</p>
-                            <a class="right card-bottom btn blue lighten-1 waves-effect waves-light" href="https://drive.google.com/file/d/1JuI-A2Kykcu4v909BjLS_BNw7FOPYaTI/view?usp=sharing"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg>Ver completo</a>
+                            <p><a class="right  btn blue lighten-1 waves-effect waves-light" href="https://drive.google.com/file/d/1JuI-A2Kykcu4v909BjLS_BNw7FOPYaTI/view?usp=sharing"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg>Ver completo</a></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- ANAGAREST1 LOGO -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/Anagarest1_Web_image.jpg">
+                    <div class="card md2card" id="anagarest">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/Anagarest1_Web_image.jpg">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Logo AnagaRest1</span>
+                        <div class="design-dictionary">
+                            <p>Logo AnagaRest1</p>
                             <p>Logotipo para un proyecto teórico de restauración del monte de Anaga, como parte de una asignatura de mis estudios como biólogo. 2018.</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- CARTEL ACTO 8 MARZO -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/8_marzo_web.png">
+                    <div class="card md2card" id="8march">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/8_marzo_web.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Cartel Evento del 8 de marzo</span>
+                        <div class="design-dictionary">
+                            <p>Cartel Evento del 8 de marzo</p>
                             <p>El diseño y el arte también son una herramienta para la revolución. Cartel para un acto organizado por las compañeras de biología de la Universidad de La Laguna. 2018.</p>
-                            <a class="right card-bottom btn deep-purple waves-effect waves-light" href="https://drive.google.com/file/d/1lxtj0fVXVhdz1vJwqMsf6I10eITx-2eo/view?usp=sharing"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg>Ver completo</a>
+                            <p><a class="right  btn deep-purple waves-effect waves-light" href="https://drive.google.com/file/d/1lxtj0fVXVhdz1vJwqMsf6I10eITx-2eo/view?usp=sharing"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg>Ver completo</a></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- CLUB NATACION MONTIJO -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/montijo.jpg">
+                    <div class="card md2card" id="montijo">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/montijo.jpg">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Logo CLub Natación Montijo</span>
+                        <div class="design-dictionary">
+                            <p>Logo CLub Natación Montijo</p>
                             <p>Logotipo para un pequeño club de Natación de Montijo. 2018.</p>
-                            <a class="right card-bottom btn light-blue waves-effect waves-light" href="https://drive.google.com/file/d/1osB_DsyVQcqzSghVX3fYFABoKxePKK_G/view?usp=sharing"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg>Ver completo</a>
+                            <p><a class="right  btn light-blue waves-effect waves-light" href="https://drive.google.com/file/d/1osB_DsyVQcqzSghVX3fYFABoKxePKK_G/view?usp=sharing"><svg viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" /></svg>Ver completo</a></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- DT2S JORDI -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/dt2s.png">
+                    <div class="card md2card" id="dt2sjordi">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/dt2s.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Icono Double Tap To Sleep</span>
+                        <div class="design-dictionary">
+                            <p>Icono Double Tap To Sleep</p>
                             <p>Icono adaptativo para un widget que permite bloquear la pantalla dando dos toques. 2018.</p>
-                            <div class="card-bottom">
-                                <a class="right btn light-blue waves-effect waves-light" href="https://play.google.com/store/apps/details?id=com.jordigordillo.dtswidget"><svg viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" /></svg>Google Play</a>
-                            </div>
+                            <p><a class="right btn light-blue waves-effect waves-light" href="https://play.google.com/store/apps/details?id=com.jordigordillo.dtswidget"><svg viewBox="0 0 24 24"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" /></svg>Google Play</a></p>
                         </div>
                     </div>
                 </div>
+
+
                 <!-- I-SONYEOL -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/i-sonyeol.png">
+                    <div class="card md2card" id="isonyeol">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/i-sonyeol.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Logo I-SONYEOL</span>
+                        <div class="design-dictionary">
+                            <p>Logo I-SONYEOL</p>
                             <p>Logo para un grupo de baile de Tenerife centrado en el Kpop. 2018.</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- esCop 2019 -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/escop2019.png">
+                    <div class="card md2card" id="escop">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/escop2019.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Logo ESCoP 2019</span>
+                        <div class="design-dictionary">
+                            <p>Logo ESCoP 2019</p>
                             <p>Logo diseñado junto a Enrique Meseguer para la 21ª Conferencia de la ESCoP (European Society for Cognitive Psychology). 2019.</p>
-                            <a class="right card-bottom btn oospink waves-effect waves-light" href="https://escop2019.webs.ull.es/"><svg viewBox="0 0 24 24"><path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>ESCoP 2019</a>
+                            <p><a class="right  btn oospink waves-effect waves-light" href="https://escop2019.webs.ull.es/"><svg viewBox="0 0 24 24"><path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>ESCoP 2019</a></p>
                         </div>
                     </div>
                 </div>
+
                 <!-- Sheet up! -->
                 <div class="col s12 m6 l6 xl4">
-                    <div class="card md2card">
-                        <div class="card-image">
-                            <img class="activator" src="../img/sheat_up.png">
+                    <div class="card md2card" id="sheatup">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/sheat_up.png">
                         </div>
-                        <div class="card-reveal">
-                            <span class="card-title">Ideas para Sheat up!</span>
+                        <div class="design-dictionary">
+                            <p>Ideas para Sheat up!</p>
                             <p>Algunos bocetos para una tienda de fundas de móvil.</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CSSColors -->
+                <div class="col s12 m6 l6 xl4">
+                    <div class="card md2card" id="csscolors">
+                        <div class="card-image modal-trigger" href="#modal-design">
+                            <img src="../img/CSSColors.png">
+                        </div>
+                        <div class="design-dictionary">
+                            <p>CSSColors kata</p>
+                            <p>CSSColors is a kata de código inspirado en colors.commutercreative.com. Está escrito en HTML, CSS y JS, con la ayuda de MaterializeCSS.</p>
+                            <p><a class="right  btn oospink waves-effect waves-light" href="http://laureanoruiz.com/CSSColors/"><svg viewBox="0 0 24 24"><path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>CSSColors</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     
     <!-- Footer -->
     <footer id="contact" class="page-footer grey darken-4 scrollspy">
@@ -392,27 +441,27 @@
             <a class="modal-trigger" href="#modal-mailform"><svg viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg></a>
 
             <!-- Modal Structure -->
-            <div id="modal-mailform" class="modal bottom-sheet grey lighten-5">
+            <div id="modal-mailform" class="modal bottom-sheet">
                 <div class="modal-content">
-                    <h5 class="title grey-text text-darken-3">Contactar por correo</h5>
+                    <h5 class="title">Contactar por correo</h5>
                     <form class="col s10" id="mail_form" action="https://formspree.io/laureano.ruiz.perez@gmail.com" method="POST">
                         <div class="row">
                             <div class="input-field col s12 m6 l6 ">
                                 <i class="prefix"><svg viewBox="0 0 24 24"><path d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" /></svg></i>
                                 <input type="text" name="name" id="name">
-                                <label for="name" class="grey-text text-darken-3">Nombre</label>
+                                <label for="name">Nombre</label>
                             </div>
                             <div class="input-field col s12 m6 l6">
                                 <i class="prefix"><svg class="prefix" viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" /></svg></i>
                                 <input type="email" name="_replyto" id="email">
-                                <label for="email" class="grey-text text-darken-3">Email</label>
+                                <label for="email">Email</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12 m12 l12">
                                 <i class="prefix"><svg class="prefix" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg></i>
-                                <textarea id="message" name="message" class="materialize-textarea grey-text text-darken-3"></textarea>
-                                <label for="message" class="grey-text text-darken-3">Mensaje</label>
+                                <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                                <label for="message">Mensaje</label>
                             </div>
                         </div>
                          <div class="right-align">
@@ -430,7 +479,7 @@
         
         <div class="col s10 grey darken-4" id="copy">
             <div class="grey-text text-darken-2 center">
-               Copyright © 2015-2020 Laureano Ruiz. Todos los derechos reservados.
+                Copyright © 2015-2020 Laureano Ruiz. Todos los derechos reservados.
             </div>
         </div>           
     </footer>
