@@ -7,26 +7,11 @@ M.Dropdown.init(document.querySelector('.lang-drop'), {
     coverTrigger: false
 });
 // Modal
-M.Modal.init(document.querySelector('.modal'), {
+M.Modal.init(document.querySelectorAll('.modal'), {
     preventScrolling: false,
     outDuration: 500
 });
 
-
-// Materialize pulse when reach contact section on PC
-//document.querySelector('.navbar-categories[href="#contact"]').addEventListener('click', () => {
-    //  var socialBarEl = document.querySelector('#social');  
-    // wait for scroll 250ms
-    //setTimeout(() => {
-        // start pulse
-        //  socialBarEl.classList.add('pulse');
-        //setTimeout(() => {
-            // stop pulse
-            //  socialBarEl.classList.remove('pulse');
-        //}, 3000);
-    //}, 250);
-//});
-    
 
 // Just two vars for the network animation
 var fill_color = "#F8BBD0"
@@ -39,39 +24,10 @@ document.querySelector('.theme-changer').addEventListener('click', () => {
     bg_color = current_bg_color === "#FFFFFF" ? "#212121" : "#FFFFFF";
     const current_fill_color = fill_color;
     fill_color = current_fill_color === "#F8BBD0" ? "#424142" : "#F8BBD0";
-
     // Toggles the "dark" class for the main body of the web
     document.querySelector('body').classList.toggle('dark');
     // Toggles the "dark" class for the hero title
     document.querySelectorAll('.hero-titles').forEach(ele => {
-        ele.classList.toggle('dark');
-    });
-    // Toggles the "dark" class for the subtitle
-    document.querySelectorAll('.subtitle').forEach(ele => {
-        ele.classList.toggle('dark');
-    });
-    // Toggles the "dark" class for SVGs on the navbar (lang-drop and theme-changer)
-    document.querySelectorAll('.nav-wrapper svg').forEach(ele => {
-        ele.classList.toggle('dark');
-    });
-    // Toggles the "dark" class for the gradient
-    document.querySelectorAll('#gradient').forEach(ele => {
-        ele.classList.toggle('dark');
-    });
-    // Toggles the "dark" class for SVGs on the resume
-    document.querySelectorAll('#curriculum svg').forEach(ele => {
-        ele.classList.toggle('dark');
-    });
-    // Toggles the "dark" class for each card
-    document.querySelectorAll('.card').forEach(ele => {
-        ele.classList.toggle('dark');
-    });
-    // Toggles the "dark" class for each card
-    document.querySelectorAll('.card-reveal').forEach(ele => {
-        ele.classList.toggle('dark');
-    });
-    // Toggles the "dark" class for each card Title
-    document.querySelectorAll('.card-title').forEach(ele => {
         ele.classList.toggle('dark');
     });
 });
@@ -104,6 +60,22 @@ document.querySelector('.theme-changer').addEventListener('click', () => {
         } 
     });
 })(cash, M.anime);
+
+
+// Design information modal
+const activableCards = document.querySelectorAll('.card-image');
+for (const card of activableCards) {
+// For each card, extracts the id, then uses it to find the title and description hidden in the card
+  card.addEventListener('click', function(){
+    let id = card.parentElement.id
+    let title = document.querySelectorAll('#' + id + ' p')[0].textContent;
+    let description = document.querySelectorAll('#' + id + ' p')[1].textContent;
+    let extra = document.querySelectorAll('#' + id + ' p')[2].innerHTML;
+    document.querySelector('#modal-design .modal-content h4').textContent = title;
+    document.querySelectorAll('#modal-design .modal-content p')[0].textContent = description;
+    document.querySelector('#modal-design .modal-footer').innerHTML = extra;
+    });
+}
 
 
 // Network animation
@@ -182,6 +154,7 @@ function draw() {
     }
 }
 loop();
+
 
 // Google Analytics stuff
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
