@@ -10,6 +10,9 @@ var white = '#FFFFFF';
 var fill_color = lightPink;
 var bg_color = white;
 
+// Declares the favicon 
+var favicon = document.getElementById('favicon');
+
 // Switches to dark theme if necessary
 if (theme === 'dark') {
     // Toggles dark mode for the network animation
@@ -17,6 +20,8 @@ if (theme === 'dark') {
     bg_color = gray900;
     // Toggles the "dark" class for the main body of the web
     document.querySelector('body').classList.add('dark');
+    // Togles the dark favicon
+    favicon.href = "/favicon-highres-dark.png";
 };
 
 // Dark and light theme button
@@ -32,6 +37,8 @@ document.querySelector('.theme-changer').addEventListener('click', () => {
     fill_color = theme === 'dark' ? gray800 : lightPink;
     // Toggles the "dark" class for the main body of the web
     document.querySelector('body').classList.toggle('dark');
+    // Toggles the favicon that mathes the theme
+    favicon.href = "/favicon-highres-" + theme + ".png";
 });
 
 // ScrollSpy
