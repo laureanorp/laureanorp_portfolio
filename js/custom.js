@@ -2,42 +2,37 @@
 // Gets current theme out of localStorage
 var theme = localStorage.getItem('theme') || 'light';
 
+// Color codes for the network animation
+var gray900 = '#212121';
+var gray800 = '#424242';
+var lightPink = '#F8BBD0';
+var white = '#FFFFFF';
+var fill_color = lightPink;
+var bg_color = white;
+
 // Switches to dark theme if necessary
 if (theme === 'dark') {
-    // vars for the network animation in dark mode
-    var fill_color = "#424142"
-    var bg_color = "#212121"
+    // Toggles dark mode for the network animation
+    fill_color = gray800;
+    bg_color = gray900;
     // Toggles the "dark" class for the main body of the web
-    document.querySelector('body').classList.toggle('dark');
-    // Toggles the "dark" class for the hero title
-    document.querySelectorAll('.hero-titles').forEach(ele => {
-        ele.classList.toggle('dark');
-    });
-} else {
-    var fill_color = "#F8BBD0";
-    var bg_color = "#FFFFFF";
+    document.querySelector('body').classList.add('dark');
 };
 
 // Dark and light theme button
 document.querySelector('.theme-changer').addEventListener('click', () => {
-    // changes the value of the theme var
+    // Changes the value of the theme var
     theme = theme === 'dark' ? 'light' : 'dark';
-    // saves the new theme to localStorage
+    // Saves the new theme to localStorage
     localStorage.setItem('theme', theme);
-    // switches the theme without reloading
+    // Switches the theme without reloading
     // Two ternary operators as a shortcut for if/else
     // Toggles the dark mode for the network animation
-    const current_bg_color = bg_color;
-    bg_color = current_bg_color === "#FFFFFF" ? "#212121" : "#FFFFFF";
-    const current_fill_color = fill_color;
-    fill_color = current_fill_color === "#F8BBD0" ? "#424142" : "#F8BBD0";
+    bg_color = theme === 'dark' ? gray900 : white;
+    fill_color = theme === 'dark' ? gray800 : lightPink;
     // Toggles the "dark" class for the main body of the web
     document.querySelector('body').classList.toggle('dark');
-    // Toggles the "dark" class for the hero title
-    document.querySelectorAll('.hero-titles').forEach(ele => {
-        ele.classList.toggle('dark');
-    });
-})
+});
 
 // ScrollSpy
 M.ScrollSpy.init(document.querySelectorAll('.scrollspy'), {
