@@ -1,3 +1,44 @@
+
+// Gets current theme out of localStorage
+var theme = localStorage.getItem('theme') || 'light';
+
+// Switches to dark theme if necessary
+if (theme === 'dark') {
+    // vars for the network animation in dark mode
+    var fill_color = "#424142"
+    var bg_color = "#212121"
+    // Toggles the "dark" class for the main body of the web
+    document.querySelector('body').classList.toggle('dark');
+    // Toggles the "dark" class for the hero title
+    document.querySelectorAll('.hero-titles').forEach(ele => {
+        ele.classList.toggle('dark');
+    });
+} else {
+    var fill_color = "#F8BBD0";
+    var bg_color = "#FFFFFF";
+};
+
+// Dark and light theme button
+document.querySelector('.theme-changer').addEventListener('click', () => {
+    // changes the value of the theme var
+    theme = theme === 'dark' ? 'light' : 'dark';
+    // saves the new theme to localStorage
+    localStorage.setItem('theme', theme);
+    // switches the theme without reloading
+    // Two ternary operators as a shortcut for if/else
+    // Toggles the dark mode for the network animation
+    const current_bg_color = bg_color;
+    bg_color = current_bg_color === "#FFFFFF" ? "#212121" : "#FFFFFF";
+    const current_fill_color = fill_color;
+    fill_color = current_fill_color === "#F8BBD0" ? "#424142" : "#F8BBD0";
+    // Toggles the "dark" class for the main body of the web
+    document.querySelector('body').classList.toggle('dark');
+    // Toggles the "dark" class for the hero title
+    document.querySelectorAll('.hero-titles').forEach(ele => {
+        ele.classList.toggle('dark');
+    });
+})
+
 // ScrollSpy
 M.ScrollSpy.init(document.querySelectorAll('.scrollspy'), {
     scrollOffset: 0
@@ -11,27 +52,6 @@ M.Modal.init(document.querySelectorAll('.modal'), {
     preventScrolling: false,
     outDuration: 500
 });
-
-
-// Just two vars for the network animation
-var fill_color = "#F8BBD0"
-var bg_color = "#FFFFFF"
-// Dark and light theme button, when pressed:
-document.querySelector('.theme-changer').addEventListener('click', () => {
-    //Two ternary operators as a shortcut for if/else because look how cool I am
-    // Toggles the dark mode for the network animation
-    const current_bg_color = bg_color;
-    bg_color = current_bg_color === "#FFFFFF" ? "#212121" : "#FFFFFF";
-    const current_fill_color = fill_color;
-    fill_color = current_fill_color === "#F8BBD0" ? "#424142" : "#F8BBD0";
-    // Toggles the "dark" class for the main body of the web
-    document.querySelector('body').classList.toggle('dark');
-    // Toggles the "dark" class for the hero title
-    document.querySelectorAll('.hero-titles').forEach(ele => {
-        ele.classList.toggle('dark');
-    });
-});
-
 
 // Click on card to close card-reveal 
 (function ($, anim) {
