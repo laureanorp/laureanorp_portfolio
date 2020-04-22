@@ -29,6 +29,33 @@
     
     
 <body>
+    <script type="text/javascript">
+        // Gets current theme out of localStorage
+        var theme = localStorage.getItem('theme') || 'light';
+
+        // Color codes for the network animation
+        var gray900 = '#212121';
+        var gray800 = '#424242';
+        var lightPink = '#F8BBD0';
+        var white = '#FFFFFF';
+        var fill_color = lightPink;
+        var bg_color = white;
+
+        // Declares the favicon 
+        var favicon = document.getElementById('favicon');
+
+        // Switches to dark theme if necessary
+        if (theme === 'dark') {
+            // Toggles the "dark" class for the main body of the web
+            document.querySelector('body').classList.add('dark');
+            // Toggles dark mode for the network animation
+            fill_color = gray800;
+            bg_color = gray900;
+            // Togles the dark favicon
+            favicon.href = "/favicon-highres-dark.png";
+        };
+    </script>
+    
     <!-- Network Animation -->
     <canvas></canvas>
 
@@ -61,9 +88,6 @@
         </div>
     </div>
     <div id="gradient"></div>
-
-    <!-- JS for the theme initializer and the network animation -->
-    <script type="text/javascript" src="../js/theme_network_init.js"></script>
 
     <!-- Curriculum -->
     <div class="section scrollspy" id="curriculum">
