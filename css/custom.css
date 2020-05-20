@@ -144,7 +144,7 @@ nav ul li.lang-drop svg, nav ul li.theme-changer svg {
 
 #intro {
     padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
 }
 
 #intro .container {
@@ -280,6 +280,22 @@ body.dark .md2card:hover {
     font-size: 17px;
     font-family: "manrope", monospace;
     color: #212121;
+}
+
+#intro svg {
+    fill: #E32D55;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+#intro .btn {
+    color: #212121;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #E32D55;
+    display: inline-flex;
+    align-items: center;
 }
 
 body.dark .hero-titles{
