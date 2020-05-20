@@ -298,6 +298,10 @@ body.dark .md2card:hover {
     align-items: center;
 }
 
+body.dark #intro .btn {
+    color: #E32D55;
+}
+
 body.dark .hero-titles{
     color: #fafafa;
     }
