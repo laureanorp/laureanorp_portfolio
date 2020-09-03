@@ -62,14 +62,21 @@ M.Modal.init(document.querySelectorAll('.modal'), {
 const activableCards = document.querySelectorAll('.card-image');
 for (const card of activableCards) {
 // For each card, extracts the id, then uses it to find the title and description hidden in the card
-  card.addEventListener('click', function(){
-    let id = card.parentElement.id
-    let title = document.querySelectorAll('#' + id + ' p')[0].textContent;
-    let description = document.querySelectorAll('#' + id + ' p')[1].textContent;
-    let extra = document.querySelectorAll('#' + id + ' p')[2].innerHTML;
-    document.querySelector('#modal-design .modal-content h4').textContent = title;
-    document.querySelectorAll('#modal-design .modal-content p')[0].textContent = description;
-    document.querySelector('#modal-design .modal-footer').innerHTML = extra;
+    card.addEventListener('click', function(){
+        let id = card.parentElement.id
+        let title = document.querySelectorAll('#' + id + ' p')[0].textContent;
+        let description = document.querySelectorAll('#' + id + ' p')[1].textContent;
+        let extra = document.querySelectorAll('#' + id + ' p')[2].innerHTML;
+        document.querySelector('#modal-design .modal-content h4').textContent = title;
+        document.querySelectorAll('#modal-design .modal-content p')[0].textContent = description;
+        document.querySelector('#modal-design .modal-footer').innerHTML = extra;
+        // If there is no extra content (buttons/links), hides the modal footer
+        let footer = document.querySelector('#modal-design .modal-footer');
+        if (extra == '') {
+            footer.style.display = "none";
+        } else { 
+            footer.style.display = "";
+        }
     });
 }
 
