@@ -30,6 +30,11 @@ M.Modal.init(document.querySelectorAll('.modal'), {
     outDuration: 500
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems);
+  });
+
 // Click on card to close card-reveal 
 (function ($, anim) {
     $(document).on('click', '.card', function (e) {

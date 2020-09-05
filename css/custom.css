@@ -163,6 +163,19 @@ body.dark #gradient {
     background: linear-gradient(rgba(33, 33, 33, 0), #212121);
 }
 
+/* WIP: Gradients for the parralax sections
+#parallax_top_gradient {
+    background: linear-gradient(white, rgba(255, 255, 255, 0));
+    height: 50px;
+    z-index: 1000;
+    position: relative;
+}
+
+body.dark #parallax_top_gradient {
+    background: linear-gradient(#212121, rgba(33, 33, 33, 0));
+}
+*/
+
 canvas {
     position: absolute;
 }
@@ -196,6 +209,10 @@ canvas {
 body.dark #curriculum svg path {
     fill: #424242;
 }
+
+.parallax-container {
+    height: 400px;
+  }
 
 .card-bottom {
     position: absolute;
