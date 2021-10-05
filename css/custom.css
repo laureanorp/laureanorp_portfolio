@@ -102,8 +102,6 @@ nav ul li.lang-drop {
 }
 
 nav ul li.theme-changer {
-    position: absolute;
-    left: 0;
     padding: 0rem 1rem 0rem 1rem;
     -webkit-tap-highlight-color: transparent;
 }
@@ -115,7 +113,7 @@ nav ul li.theme-changer {
 }
 
 .lang-drop svg path, .theme-changer svg path {
-    fill: #424242;
+    fill: #757575;
 }
 
 body.dark .lang-drop svg path, body.dark .theme-changer svg path {
@@ -211,7 +209,7 @@ body.dark #curriculum svg path {
 }
 
 .parallax-container {
-    height: 400px;
+    height: 300px;
   }
 
 .card-bottom {
@@ -289,7 +287,7 @@ body.dark .md2card:hover {
 .hero-titles{
     font-family: "manrope", monospace;
     font-size: 25px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     color: #212121;
     }
 
