@@ -292,10 +292,12 @@ body.dark .md2card:hover {
 }
 
 #intro svg {
+    width: 22px;
+    height: 22px;
+}
+
+body.dark #intro svg {
     fill: #E32D55;
-    width: 20px;
-    height: 20px;
-    margin-right: 0.5rem;
 }
 
 #intro .btn {
@@ -305,6 +307,9 @@ body.dark .md2card:hover {
     border: 2px solid #E32D55;
     display: inline-flex;
     align-items: center;
+    padding: 0 0.75rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 }
 
 body.dark #intro .btn {
