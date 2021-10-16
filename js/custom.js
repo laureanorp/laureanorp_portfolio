@@ -6,7 +6,6 @@ document.querySelector('.theme-changer').addEventListener('click', () => {
     // Saves the new theme to localStorage
     localStorage.setItem('theme', theme);
     // Switches the theme without reloading
-    // Two ternary operators as a shortcut for if/else
     // Toggles the dark mode for the network animation
     bg_color = theme === 'dark' ? gray900 : white;
     fill_color = theme === 'dark' ? gray800 : lightPink;

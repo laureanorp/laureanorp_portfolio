@@ -1,10 +1,4 @@
-/*!
-Code by Laureano Ruiz Pérez for its Web Portfolio.
-Remember using ";"
-Remember the tree style sintax (dots, #, parents...)
-*/
 
-/* trasition: to smooth the effect of the theme changer */
 body {
     overflow-x: hidden;
     transition: all 0.6s;
